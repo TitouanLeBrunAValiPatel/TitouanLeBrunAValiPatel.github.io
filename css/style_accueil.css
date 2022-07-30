@@ -1,0 +1,101 @@
+/* Body */
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    color:  #FFFFFF;
+    font-size: 18px;
+}
+
+/* Section block cv */
+
+.encadre_text{
+    font-size: 40px;
+    border: 1px solid white;
+    margin: 10px 35% 10px 35%;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+}
+
+.border{
+    border: 1px solid #08fdd8;
+    box-shadow: 10px 5px 5px #08fdd8;
+    margin: 20px 25% 20px 25%;
+    border-radius: 20px;
+
+}
+.cv_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    border-radius: 20px;
+    background: #181818;
+}
+
+.cv_text, .cv_photo, .text_p{
+    margin: 10px;
+    background: #181818;
+    max-width: 100%; /* limiter à la longueur de leur parent */
+}
+
+.lien{
+    border: 1px solid #08fdd8;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; /* (par defaut a est un inline) puisse prendre des dimensions et pouvoir mettre d'autre balise sur la même ligne*/
+    text-decoration: none;
+}
+.lien:hover{
+    background: #08fdd8;
+    border: 1px solid white;
+    transition: all 0.5s;
+    color: #1d1d1d;
+}
+
+/* Fin Section block cv */
+
+
+/* Section rappel menu */
+
+section.rappel_menu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.lien_menu h2{
+    margin-left: 0;
+    margin-right: 0;
+}
+.lien_menu{
+    margin: 10px 10% 10px 10%; /*pouvoir centrer les bulles */
+    max-width: 500px;
+    text-align: center;
+    background-color: #181818;
+    padding: 10px;
+    border: 1px solid #08fdd8;
+    border-radius: 7px;
+}
+
+/*Fin Section rappel menu */
+
+
+/* Partie responsive */
+
+@media screen and (max-width: 800px){
+
+    .border{
+        margin: 0 10px 0 10px;
+        box-shadow: none;
+    }
+    
+    section.rappel_menu{grid-template-columns: 1fr;}
+    .encadre_text{margin: 10px 20px 10px;}
+}
+
+/* Fin du Body */ 

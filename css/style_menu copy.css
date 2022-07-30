@@ -1,0 +1,217 @@
+/* Body */
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    color:  #FFFFFF;
+    font-size: 18px;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 5px 10px;
+    margin-bottom: 10px;
+}
+
+/*Fleche retour */
+
+.lien_back_history{
+display: block;
+width: 25px;
+height: 20px;
+background: transparent;
+cursor: pointer;
+position: relative;
+margin-left: 10px;
+}
+.trait_retour, .trait_retour::after, .trait_retour::before{
+width: 20px;
+height: 2px;
+background: white;
+border-radius: 10%;
+display: inline-block;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translate(0, -50%);
+}
+.trait_retour::after, .trait_retour::before{
+    content: '';
+    width: 10px;
+}
+.trait_retour::before{
+    transform-origin: -1% 15%; /*changer le point d'origine axe x et y*/
+    transform: rotate(-45deg);
+}
+.trait_retour::after{
+    transform-origin: 8% 80%;
+    transform: rotate(45deg);
+}
+
+.lien_back_history:hover .trait_retour{ /* espace très important pour modifier le deuxieme element en fonction du premier*/
+    background: #08fdd8;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.lien_back_history:hover .trait_retour::after{ 
+    background: #08fdd8;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.lien_back_history:hover .trait_retour::before{ 
+    background: #08fdd8;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*Fin de fleche retour*/
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #000;
+}
+
+/* Menu de navigation */
+
+.checkbox_menu_deroulant{
+    display: none;
+}
+.liens{
+    margin-right: 10px;
+    background-color: black;
+    text-decoration: none;    
+}
+.liens:hover{
+    text-decoration: underline;
+}
+.liste_menu_navigation{
+    background: black;
+}
+.menu_deroulant{height: 0%;}
+
+/* Fin du menu de navigation */
+
+
+
+
+
+/* Fin de header */
+
+/* Fin de Body */
+
+/* Partie responsive */
+
+@media screen and (max-width:1200px){
+
+     .menu_navigation{
+        transform: translate(-250%, -120%); /* je fais disparaitre l'element vers le haut */
+        background: #000;
+        border-radius: 15px;
+    }
+    header{
+        padding:10px 0 10px 0;
+    }
+    .menu_deroulant{
+        background: transparent;
+        width: 32px;
+        height: 32px;
+    }
+    .btn_menu_deroulant{
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background: transparent;
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 0;
+    }
+    .trait_menu_deroulant{
+        width: 20px;
+        height: 2px;
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 6px;
+        background: white;
+        z-index: 5;
+
+    }
+    .trait_menu_deroulant::after{
+        content: "";
+        width: 20px;
+        height: 2px;
+        display: inline-block;
+        background: white;
+        position: absolute;
+        margin-top: 8px;
+        
+    }
+    .trait_menu_deroulant::before{
+        content: "";/* Obligatoire pour les before / after */
+        width: 20px;
+        height: 2px;
+        display: inline-block; /* par défaut il est en inline donc ne peut prendre de dimension */
+        background: white;
+        position: absolute;
+        margin-top: -8px; /* -8px par rapport au trait initial */
+        
+    }
+
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant{ /* quand la checkbox est check le label grandit*/
+        width: 100%;
+        height: 100%;
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant{ /*selction du span qui se trouve dans le label qui est l'un des fils de la checkbox*/
+        background: transparent; 
+    }
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::before{
+        margin-top: 0; /* remettre à sa position initiale*/
+        transform: rotate(45deg); /*tourner de 45deg*/
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); 
+    }
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::after{
+        margin-top: 0;
+        transform: rotate(-45deg); 
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .checkbox_menu_deroulant:checked ~ .menu_navigation{
+        transform: translate(0%);
+        position: absolute;
+        background: #000;
+        top: 0;
+        right: 0;
+        height: 50%;
+        width: 20%;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
+    .checkbox_menu_deroulant:checked ~ .menu_navigation .liste_menu_navigation{
+        display: flex; /* mettre le menu au bon endroit*/
+        flex-direction: column;
+        margin: 40px 5px 0 5px; /*avoir un espacement sur l'en tete et a gauche et droite*/
+        height: 100%;
+        padding-left: 5px;
+        border: 1px solid #08fdd8;
+        border-radius: 10px;
+        justify-content: space-around;
+    } 
+}
+
+@media screen and (max-width:800px){
+    .checkbox_menu_deroulant:checked ~ .menu_navigation{
+        height: auto;
+        width: auto;
+    
+    }
+
+
+    .checkbox_menu_deroulant:checked ~ .menu_navigation .liste_menu_navigation{
+
+        height: 216px;
+    }
+}

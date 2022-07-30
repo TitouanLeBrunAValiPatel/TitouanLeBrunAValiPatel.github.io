@@ -1,0 +1,202 @@
+/* Body */
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    color:  #FFFFFF;
+    font-size: 18px;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 5px 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.menu_navigation{background: black}
+
+/*Fleche retour */
+
+.lien_back_history{
+display: block;
+width: 25px;
+height: 20px;
+background: transparent;
+cursor: pointer;
+position: relative;
+margin-left: 10px;
+}
+.trait_retour, .trait_retour::after, .trait_retour::before{
+width: 20px;
+height: 2px;
+background: white;
+border-radius: 10%;
+display: inline-block;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translate(0, -50%);
+}
+.trait_retour::after, .trait_retour::before{
+    content: '';
+    width: 10px;
+}
+.trait_retour::before{
+    transform-origin: -1% 15%; /*changer le point d'origine axe x et y*/
+    transform: rotate(-45deg);
+}
+.trait_retour::after{
+    transform-origin: 8% 80%;
+    transform: rotate(45deg);
+}
+
+.lien_back_history:hover .trait_retour{ /* espace très important pour modifier le deuxieme element en fonction du premier*/
+    background: #08fdd8;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.lien_back_history:hover .trait_retour::after{ 
+    background: #08fdd8;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.lien_back_history:hover .trait_retour::before{ 
+    background: #08fdd8;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*Fin de fleche retour*/
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #000;
+}
+
+/* Menu de navigation */
+
+.checkbox_menu_deroulant{
+    display: none;
+}
+.liens{
+    margin-right: 10px;
+    background-color: black;
+    text-decoration: none;    
+}
+.liens:hover{
+    text-decoration: underline;
+}
+.liste_menu_navigation{
+    background: black;
+}
+.menu_deroulant{height: 0%;}
+
+/* Fin du menu de navigation */
+
+
+
+
+
+/* Fin de header */
+
+/* Fin de Body */
+
+/* Partie responsive */
+
+@media screen and (max-width:1200px){
+
+    .menu_navigation{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        transform: translateY(-100%);
+    }
+
+
+    .btn_menu_deroulant{
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 40px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 40;
+    }
+    .trait_menu_deroulant{
+        display: inline-block;
+        position: absolute;
+        width: 27px;
+        height: 4px;
+        right: 15px;
+        top: 15px;
+        border-radius: 7px;
+        background: #fff;
+        z-index: 70;
+    }
+    .trait_menu_deroulant::before{
+        content: "";
+        width: 27px;
+        height: 4px;
+        position: absolute;
+        top: 9px;
+        border-radius: 7px;
+        background: #fff;
+    }
+    .trait_menu_deroulant::after{
+        content: "";
+        width: 27px;
+        height: 4px;
+        position: absolute;
+        top: -9px;
+        border-radius: 7px;
+        background: #fff;
+    }
+
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant{background: transparent;}
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::after{transform: rotate(-45deg); top: 0;}
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::before{transform: rotate(45deg); top: 0;}
+
+    
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant{
+        background: transparent;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+    }
+    .checkbox_menu_deroulant:checked ~  .menu_navigation{
+        transform: translate(0);
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70vh;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        z-index: 15;
+        margin-top: 40px;
+    }
+
+    .checkbox_menu_deroulant:checked ~ .menu_navigation .liens{
+        align-items: center;
+        padding: 20px;
+    }
+    .checkbox_menu_deroulant:checked ~ .menu_navigation .liens:hover{
+        background: #1d1d1d;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+     
+}
+
+@media screen and (max-width:800px){
+
+}

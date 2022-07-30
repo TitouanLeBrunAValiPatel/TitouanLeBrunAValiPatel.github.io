@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_stages.css">
+    <link rel="stylesheet" href="./css/style_menu.css">
+    <link rel="stylesheet" href="./css/style_footer.css">
+    <title>Titouan Le Brun - Stages</title>
+</head>
+<body>
+
+
+    <header>
+
+        <a class="lien_back_history" onclick="history.back()"> <!-- retour en arriere -->
+            <span class="trait_retour"></span>
+        </a>
+
+        <h1>Titouan Le Brun</h1>
+
+        <div class="menu_deroulant">
+            <input class="checkbox_menu_deroulant" type="checkbox" name="checkbox_menu_deroulant" id="checkbox_menu_deroulant">
+            <label class="btn_menu_deroulant" for="checkbox_menu_deroulant"> <!-- le for doit avoir le meme id que la checkbox très important -->
+                <span  class="trait_menu_deroulant"></span>
+            </label>
+            <nav class="menu_navigation">
+<!--                 <ul class="liste_menu_navigation">
+ -->                    <a href="./accueil.html" class="liens">Accueil</a>
+                    <a href="./projets.html" class="liens">Projets</a>
+                    <a href="./certifications.html" class="liens">Certifications</a>
+                    <a href="./veille.html" class="liens">Veille</a>
+                    <a href="./stages.html" class="liens">Stages</a>
+                <!-- </ul> -->
+            </nav>
+        </div>  
+
+
+    </header>
+    <div class="bloc_stage_1">
+        <div class="stages_en_tete">
+            <h2 class="stages_big_title encadre_text">Stage de première année</h2>
+            <h3 class="stages_place encadre_text"><strong class="stages_strong_underline stages_place">Lieu</strong> : France Poultry Châteaulin</h3>
+            <p class="stages_purpose"><strong class="stages_strong_underline stages_purpose">Objectif</strong> : Mettre à jour un site web interne et fusionner certaines BDD</p>
+            <h4 class="stages_plan"><strong class="stages_strong_underline stages_purpose">Plan</strong>:</h4>
+            <ul class="stages_plan">
+                <li class="li_bg_transparent"><p class="stages_each_step">Configurer le serveur de secours en machine <strong class="color_strong fz_em">Plug and Play</strong>  (Deux environnement)</p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step"><strong class="color_strong fz_em">Préparation Bases</strong> pour la nouvelle version </p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step">Revoir les interfaces des vues <strong class="color_strong fz_em">Automates et Marqueuse</strong></p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step">Création <strong class="color_strong fz_em">interface version actuelle pour contrôle nouvelle version</strong></p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step"><strong class="color_strong fz_em">Fusion de l’application couvercle</strong> dans une nouvelle version</p></li>
+            </ul>
+            <p class="stages_purpose">Durant mes 2 périodes de stages j'ai pu valider un <strong class="color_strong stages_purpose"> ensemble de compétence</strong>pour mon BTS SIO</p>
+            <div class="stage_flex_lien_v2">
+                
+                <a href="./pdf/Tableau_de_synthèse.xlsx" download class="lien_photo_nouveau_site liens_externe" target="_blank">Télécharger mon tableau de synthèse</a>
+            </div>
+        </div>
+    
+        <section class="stages_projet_v2">
+
+
+ <!-- bloc commande de sauvegarde -->   
+ <div class="stages_bloc_v2">
+
+
+
+    <div class="bloc_flex_v2">
+
+
+        <div class="stage_text_v2">
+            <h2 class="stages_text_h2">
+                Configurer le serveur de secours en machine <strong class="color_strong fz_em">Plug and Play</strong>
+                  (Deux environnement)
+            </h2>
+            <p class="stages_text_p  ">
+                Sur <strong class="color_strong">Linux</strong>  j'ai mis en place un programme qui récupère la
+                 BDD de France Poultry avec les nouvelles données et ensuite je supprime la base de récupération
+                  et la <strong class="color_strong">restaure avec les nouvelles données</strong> ce qui me 
+                  permet de faire mes modifications en toute sécurité. J'ai fais des sauvegardes de mes 
+                  modifications pour pouvoir les restaurer rapidement <strong class="color_strong">
+                    à l'aide d'un script</strong>.
+            </p>
+        </div>
+
+        <div class="stage_line"></div>
+
+        <div class="stage_img_v2">
+            <a href="./image/commande_sauvegarde_bdd.JPG" target="_blank">
+                <img class="stages_image_2" src="./image/commande_sauvegarde_bdd.JPG" alt="photo de la commande de sauvegarde">
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <div class="stage_flex_lien_v2">
+        <a href="./image/commande_sauvegarde_bdd.JPG" class="lien_photo_nouveau_site liens_externe" target="_blank">Code de sauvegarde</a>
+        <a href="./image/crontab_l.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Fichier sh / crontab -l</a>
+
+    </div>
+
+</div>
+
+
+<div class="big_line"></div>
+<div class="big_line"></div>
+
+
+
+ <!-- bloc Revoir les interfaces des vues Automates et Marqueuse -->   
+ <div class="stages_bloc_v2">
+
+
+
+    <div class="bloc_flex_v2">
+
+
+        <div class="stage_text_v2">
+            <h2 class="stages_text_h2">
+                <strong class="color_strong fz_em">Préparation Bases</strong> pour la nouvelle version 
+            </h2>
+            <p class="stages_text_p  ">
+                Dans cette seconde étape j'ai <strong class="color_strong">créer 2 vues, des nouvelles tables, et 2 fonctions</strong> dans PostGresql.
+                les 2 vues que j'ai créé sont appelées Automate2 et Marqueuse2 qui correspondent aux 
+                <strong class="color_strong"> données les plus importantes</strong> de la production.
+                Dans l'ancienne application ces vues n'étaient pas clairement identifier, il fallait faire des 
+                jointures dans plusieurs tables de la BDD. <br> Donc mon tuteur m'a demandé de créer ces 2 vues 
+                pour <strong class="color_strong">simplifier le code Php.</strong> <br> par la suite, j'ai créer 2
+                fonctions dans PostGresql, kilo et freinte pour également alléger le code PHP. <br>
+                Et j'ai créer donc ces vues à partir de nouvelles tables que m'ont tuteur m'avaient demandé de créer 
+                et d'y insérer des données déjà faites.
+            </p>
+        </div>
+
+        <div class="stage_line"></div>
+
+        <div class="stage_img_v2">
+            <a href="./image/nouvelles_tables,fonctions,vues.png" target="_blank">
+                <img class="stages_image_2" src="./image/nouvelles_tables,fonctions,vues.png" alt="photo des tables fonctions et vues créer et encadrer en rouge">
+            </a>
+        </div>
+
+        <div class="stage_flex_lien_v2">
+            <a href="./image/code_automate.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL vue Automate</a>
+            <a href="./image/code_marqueuse.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL vue Marqueuse</a>
+            <a href="./image/code_kilo.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction Kilo</a>
+            <a href="./image/code_freinte.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction Freinte</a>
+            <a href="./image/code_chargement.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL d'une table (Chargement)</a>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<div class="big_line"></div>
+<div class="big_line"></div>
+
+
+ <!-- bloc Préparation Bases pour la nouvelle version -->   
+ <div class="stages_bloc_v2">
+
+
+
+    <div class="bloc_flex_v2">
+
+
+        <div class="stage_text_v2">
+            <h2 class="stages_text_h2">
+                Revoir les interfaces des vues <strong class="color_strong fz_em">Automates et Marqueuse</strong> 
+            </h2>
+            <p class="stages_text_p  ">
+                Après avoir créer les 2 vues le but était de faire ressortir ses 
+                <strong class="color_strong fz_em">données</strong> et qu'elles soient 
+                <strong class="color_strong fz_em">identiques</strong>  
+                à ce qu'il y a actuellement en production. <br>
+                En utilisant bien évidemment 
+                <strong class="color_strong fz_em">les nouvelles tables, vues et functions</strong>
+                créer précedemment
+                <br>
+                <br>
+                Une fois ce travail fait il y a une partie vérification durant 1 à 3 jours pour vérifier 
+                que même avec de nouvelles données il n'y a pas d'erreurs.
+                <br>
+                <br>
+                <strong class="color_strong fz_em">Exemples d'erreurs : </strong>
+                <br>
+                - Une marque qui n’a pas été insérer dans la table Marque ce qui crée un trou dans le tableau <br>
+                - Un libelle message qui ne correspond pas au code de l’article <br>
+                - Un calibre qui est différent de celui initial. <br>
+                - ...
+            </p>
+        </div>
+
+        <div class="stage_line"></div>
+
+        <div class="stage_img_v2">
+            <a href="./image/nouveau_site_original.png" target="_blank">
+                <img class="stages_image_2" src="./image/nouveau_site.png" alt="photo de l'interface marqueuse">
+            </a>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="stage_flex_lien_v2">
+        <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Ancien Site</a>
+        <a href="./image/nouveau_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Nouveau Site</a>
+    </div>
+
+</div>
+
+
+<div class="big_line"></div>
+<div class="big_line"></div>
+
+
+
+
+
+ <!--  bloc controle btn  -->   
+            <div class="stages_bloc_v2 stages_bg_color">
+
+
+
+                <div class="bloc_flex_v2">
+
+
+                    <div class="stage_text_v2">
+                        <h2 class="stages_text_h2">
+                            Création <strong class="color_strong fz_em">
+                                interface version actuelle pour contrôle nouvelle version</strong> 
+                        </h2>
+                        <p class="stages_text_p  ">
+                            Lors de cette étape, le but était de <strong class="color_strong fz_em">
+                                mettre à jour nos nouvelles tables, vues en temps réel</strong>.
+                                 <br>
+                                C'est-à-dire que lorsque les employés font une action sur l'ancienne 
+                                application avec les anciennes tables, il faut qu'en parrallèle les
+                                nouvelles tables et vues elles aussi ce
+                                <strong class="color_strong fz_em">mettent à jour automatiquement.</strong> 
+                                <br> 
+                                <br>
+                                Pour cela, j'ai créer 2 nouvelles fonctions dans PostGresql appelés 
+                                <strong class="color_strong fz_em">maj_selection et maj_chargement</strong>, 
+                                dans le but d'alléger encore un peu le code php.
+                                <br>
+                                Là également il y a un travail de vérification sur plusieurs jours pour
+                                vérifier qu'ils n'y aient pas d'erreurs.
+                        </p>
+                    </div>
+
+                    <div class="stage_line"></div>
+
+                    <div class="stage_img_v2">
+                        <a href="./image/bouton_selection_prod_ancienne_application.png" target="_blank">
+                            <img class="stages_image_2" src="./image/bouton_selection_prod_ancienne_application.png" alt="photo du boutton maj">
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="stage_flex_lien_v2">
+                    <a href="./image/bouton_selection_prod_ancienne_application.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel ancien site</a>
+                    <a href="./image/bouton_selection_prod_nouvelle_application.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel nouveau site</a>
+                    <a href="./image/code_maj_selection.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction maj_selection()</a>
+                    <a href="./image/code_chargement.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction maj_chargement()</a>
+                    <a href="./image/modif_sel_article.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL ajouter dans l'ancienne application </a>
+                </div>
+
+            </div>
+            
+
+            <div class="big_line"></div>
+            <div class="big_line"></div>
+
+
+            <!-- bloc Fusion de l’application couvercle dans une nouvelle versione -->   
+            <div class="stages_bloc_v2">
+
+
+
+                <div class="bloc_flex_v2">
+
+
+                    <div class="stage_text_v2">
+                        <h2 class="stages_text_h2">
+                            <strong class="color_strong fz_em">Fusion de l’application couvercle</strong> dans une nouvelle version 
+                        </h2>
+                        <p class="stages_text_p  ">
+                            Pour cette dernière étape, j'avais pour but de fusionner leur deuxième application "couvercle"
+                            avec l'autre. 
+                            <br>
+                            <br>
+                            Tout d'abord j'ai commencé par analyser la structure complète de la nouvelle application dans 
+                            le code php, puis j'ai listés tous les <strong class="color_strong">fichiers à modifier</strong> pour intégrer ses
+                            nouvelles données dans l'application. 
+                            <br>
+                            Et également celle <strong class="color_strong">à créer</strong>. 
+                            <br>
+                            Ensuite, j'y ai été pas à pas. Je faisais des <strong class="color_strong">copies et sauvegardes</strong> régulièrement.
+                            Pour éviter tout problème. 
+                            <br>
+                            <br>
+                            <strong class="color_strong">Exemple de modifications :</strong> 
+                            <br>
+                            - <strong>ajout d'un droit</strong> (le droit "COU" pour que seule les personnes habilités aient accès aux fichiers couvercle) <br>
+                            - <strong>modification des types dans les input</strong> (type "number" au lieu de "text" pour éviter les erreurs lors des exécutions des formulaires) <br>
+                            - <strong>ajout de fonctions ou rajout d'option</strong> (l'application fonctionne avec des fonctions pour éviter de répéter du code, 
+                            en utilisant leur fonction il manquait des critères telle que la modification lègere d'un style css d'un boutton par exemple vouloir
+                             le mettre en rouge plûtot qu'en gris. <br>
+                        </p>
+                    </div>
+
+                    <div class="stage_line"></div>
+
+                    <div class="stage_img_v2">
+                        <a href="./image/code_menuleft.png" target="_blank">
+                            <p class="voir_en_grand">Voir l'image en plus grand</p>
+                            <img class="stages_image_2" src="./image/code_menuleft.png" alt="photo du code du nouveau menu ">
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="stage_flex_lien_v2">
+                    <a href="./image/menu_left_couvercle.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel nouveau menu</a>
+                    <a href="./image/code_menuleft.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code PHP menuleft</a>
+                    <a href="./image/fichier_creer_VUE.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Nouveau fichier dans VUE </a>
+                    <a href="./image/fichier_creer_ACTION.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Nouveau fichier dans ACTION </a>
+                    <a href="./image/code_gen_style_class_onclick.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Rajout d'option GEN_Edit  </a>
+
+                </div>
+
+            </div>
+
+            <div class="big_line"></div>
+            <div class="big_line"></div>
+
+
+            <!-- bloc bonus -->   
+            <div class="stages_bloc_v2" id="gestion_couvercle">
+   
+   
+   
+                <div class="bloc_flex_v2">
+
+
+                    <div class="stage_text_v2">
+                        <h2 class="stages_text_h2">
+                            <strong class="color_strong fz_em">Bonus</strong>
+                        </h2>
+                        <p class="stages_text_p  ">
+                            J'ai eu la chance de finir mes missions 1 semaines avant la fin de mon stage donc j'ai pu montrer à plusieurs employés ce qu'ils en pensaient
+                            des modifications que j'ai apporté et aussi me dire <strong class="color_strong">les correctifs et modifcations supplémentaires</strong> que je pouvais apporté.
+                            <br>
+                            <br>
+                            
+                            <br>
+                            Leur premier correctifs étaient d'une page qui ne faisaient <strong class="color_strong">pas correctement le filtre</strong> lors de la recherche. 
+                            Cela étaient simplement une erreur de frappe dans le code. 
+                            <br>
+                            Ensuite, la première modification que j'ai apporté était la <strong class="color_strong">lisibilité</strong> de certains tableaux. 
+                            J'ai donc décidé de créer une colonne appelé <strong class="color_strong">" class_name "</strong> qui grâce au code php devient invisible sur le visuelle
+                            mais en réalité cette colonne permet de données class css défini prédemment.
+                            <br>
+                            <br>
+                            La deuxième modifcations que j'ai apporté est la possibilité de mettre <strong class="color_strong">plusieurs liens </strong>sur une seul case,
+                            ce qui n'est pas possible avant.
+                            <br>
+                            <br>
+                            Pour finir les employés mon demandés de faire en sorte que lors de la répartion de poulet dans les différents couvercle, 
+                            que la <strong class="color_strong">répartion</strong> soit égale à ce que l'automate va réellement faire. Ainsi qu'apporté une couleur distinct
+                            aux catégorie de poulet qui sont réparties sur plusieurs couvercles.
+                            
+                            <br>
+                            <br>
+
+                            <a class="color_strong" href="./def.html#section_stage">Comprendre la gestion des couvercles →</a>
+                        </p>
+                    </div>
+
+                    <div class="stage_line"></div>
+
+                    <div class="stage_img_v2">
+                        <a href="./image/interface_bgcolor_tab.png" target="_blank">
+                            <p class="voir_en_grand">Voir l'image en plus grand</p>
+                            <img class="stages_image_2" src="./image/interface_bgcolor_tab.png" alt="photo du tableau des couvercles">
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="stage_flex_lien_v2">
+                    <a href="./image/interface_bgcolor_tab.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel couvercle</a>
+                    <a href="./image/code_couvercle_sel_bgcolor.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Requête PostGresql class_name</a>
+                    <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code PHP class_name</a>
+                    <a href="./image/code_easy_lien.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code fonction GEN_Lien  </a>
+                </div>
+
+            </div>
+
+            <div class="big_line"></div>
+             <div class="big_line"></div>
+
+        
+    </div>
+</section>
+    
+
+<section class="stages_projet_v2">
+
+    <div class="bloc_stage_2">
+        <div class="stages_en_tete">
+            <h2 class="stages_big_title encadre_text">Stage de deuxième année</h2>
+            <h3 class="stages_place encadre_text"><strong class="stages_strong_underline stages_place">Lieu</strong> : France Poultry Châteaulin</h3>
+            <p class="stages_purpose"><strong class="stages_strong_underline stages_purpose">Objectif</strong> : Mettre à jour un site web interne et fusionner certaines BDD</p>
+            <h4 class="stages_plan"><strong class="stages_strong_underline stages_purpose">Plan</strong>:</h4>
+            <ul class="stages_plan">
+                <li class="li_bg_transparent"><p class="stages_each_step">Configurer le serveur de secours en machine <strong class="color_strong fz_em">Plug and Play</strong>  (Deux environnement)</p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step"><strong class="color_strong fz_em">Préparation Bases</strong> pour la nouvelle version </p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step">Revoir les interfaces des vues <strong class="color_strong fz_em">Automates et Marqueuse</strong></p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step">Création <strong class="color_strong fz_em">interface version actuelle pour contrôle nouvelle version</strong></p></li>
+                <li class="li_bg_transparent"><p class="stages_each_step"><strong class="color_strong fz_em">Fusion de l’application couvercle</strong> dans une nouvelle version</p></li>
+            </ul>
+            <p class="stages_purpose">Durant mes 2 périodes de stages j'ai pu valider un <strong class="color_strong stages_purpose"> ensemble de compétence</strong>pour mon BTS SIO</p>
+            <div class="stage_flex_lien_v2">
+                
+                <a href="./pdf/Tableau_de_synthèse.xlsx" download class="lien_photo_nouveau_site liens_externe" target="_blank">Télécharger mon tableau de synthèse</a>
+            </div>
+        </div>
+    <!-- bloc commande de sauvegarde -->   
+    <div class="stages_bloc_v2">
+   
+   
+   
+       <div class="bloc_flex_v2">
+   
+   
+           <div class="stage_text_v2">
+               <h2 class="stages_text_h2">
+                   Configurer le serveur de secours en machine <strong class="color_strong fz_em">Plug and Play</strong>
+                     (Deux environnement)
+               </h2>
+               <p class="stages_text_p  ">
+                   Sur <strong class="color_strong">Linux</strong>  j'ai mis en place un programme qui récupère la
+                    BDD de France Poultry avec les nouvelles données et ensuite je supprime la base de récupération
+                     et la <strong class="color_strong">restaure avec les nouvelles données</strong> ce qui me 
+                     permet de faire mes modifications en toute sécurité. J'ai fais des sauvegardes de mes 
+                     modifications pour pouvoir les restaurer rapidement <strong class="color_strong">
+                       à l'aide d'un script</strong>.
+               </p>
+           </div>
+   
+           <div class="stage_line"></div>
+   
+           <div class="stage_img_v2">
+               <a href="./image/commande_sauvegarde_bdd.JPG" target="_blank">
+                   <img class="stages_image_2" src="./image/commande_sauvegarde_bdd.JPG" alt="photo de la commande de sauvegarde">
+               </a>
+           </div>
+   
+   
+       </div>
+   
+   
+       <div class="stage_flex_lien_v2">
+           <a href="./image/commande_sauvegarde_bdd.JPG" class="lien_photo_nouveau_site liens_externe" target="_blank">Code de sauvegarde</a>
+           <a href="./image/crontab_l.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Fichier sh / crontab -l</a>
+   
+       </div>
+   
+   </div>
+   
+   
+   <div class="big_line"></div>
+   <div class="big_line"></div>
+   
+   
+   
+    <!-- bloc Revoir les interfaces des vues Automates et Marqueuse -->   
+    <div class="stages_bloc_v2">
+   
+   
+   
+       <div class="bloc_flex_v2">
+   
+   
+           <div class="stage_text_v2">
+               <h2 class="stages_text_h2">
+                   <strong class="color_strong fz_em">Préparation Bases</strong> pour la nouvelle version 
+               </h2>
+               <p class="stages_text_p  ">
+                   Dans cette seconde étape j'ai <strong class="color_strong">créer 2 vues, des nouvelles tables, et 2 fonctions</strong> dans PostGresql.
+                   les 2 vues que j'ai créé sont appelées Automate2 et Marqueuse2 qui correspondent aux 
+                   <strong class="color_strong"> données les plus importantes</strong> de la production.
+                   Dans l'ancienne application ces vues n'étaient pas clairement identifier, il fallait faire des 
+                   jointures dans plusieurs tables de la BDD. <br> Donc mon tuteur m'a demandé de créer ces 2 vues 
+                   pour <strong class="color_strong">simplifier le code Php.</strong> <br> par la suite, j'ai créer 2
+                   fonctions dans PostGresql, kilo et freinte pour également alléger le code PHP. <br>
+                   Et j'ai créer donc ces vues à partir de nouvelles tables que m'ont tuteur m'avaient demandé de créer 
+                   et d'y insérer des données déjà faites.
+               </p>
+           </div>
+   
+           <div class="stage_line"></div>
+   
+           <div class="stage_img_v2">
+               <a href="./image/nouvelles_tables,fonctions,vues.png" target="_blank">
+                   <img class="stages_image_2" src="./image/nouvelles_tables,fonctions,vues.png" alt="photo des tables fonctions et vues créer et encadrer en rouge">
+               </a>
+           </div>
+   
+           <div class="stage_flex_lien_v2">
+               <a href="./image/code_automate.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL vue Automate</a>
+               <a href="./image/code_marqueuse.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL vue Marqueuse</a>
+               <a href="./image/code_kilo.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction Kilo</a>
+               <a href="./image/code_freinte.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction Freinte</a>
+               <a href="./image/code_chargement.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL d'une table (Chargement)</a>
+           </div>
+   
+   
+       </div>
+   
+   
+   </div>
+   
+   
+   <div class="big_line"></div>
+   <div class="big_line"></div>
+   
+   
+    <!-- bloc Préparation Bases pour la nouvelle version -->   
+    <div class="stages_bloc_v2">
+   
+   
+   
+       <div class="bloc_flex_v2">
+   
+   
+           <div class="stage_text_v2">
+               <h2 class="stages_text_h2">
+                   Revoir les interfaces des vues <strong class="color_strong fz_em">Automates et Marqueuse</strong> 
+               </h2>
+               <p class="stages_text_p  ">
+                   Après avoir créer les 2 vues le but était de faire ressortir ses 
+                   <strong class="color_strong fz_em">données</strong> et qu'elles soient 
+                   <strong class="color_strong fz_em">identiques</strong>  
+                   à ce qu'il y a actuellement en production. <br>
+                   En utilisant bien évidemment 
+                   <strong class="color_strong fz_em">les nouvelles tables, vues et functions</strong>
+                   créer précedemment
+                   <br>
+                   <br>
+                   Une fois ce travail fait il y a une partie vérification durant 1 à 3 jours pour vérifier 
+                   que même avec de nouvelles données il n'y a pas d'erreurs.
+                   <br>
+                   <br>
+                   <strong class="color_strong fz_em">Exemples d'erreurs : </strong>
+                   <br>
+                   - Une marque qui n’a pas été insérer dans la table Marque ce qui crée un trou dans le tableau <br>
+                   - Un libelle message qui ne correspond pas au code de l’article <br>
+                   - Un calibre qui est différent de celui initial. <br>
+                   - ...
+               </p>
+           </div>
+   
+           <div class="stage_line"></div>
+   
+           <div class="stage_img_v2">
+               <a href="./image/nouveau_site_original.png" target="_blank">
+                   <img class="stages_image_2" src="./image/nouveau_site.png" alt="photo de l'interface marqueuse">
+               </a>
+           </div>
+   
+   
+   
+       </div>
+   
+   
+       <div class="stage_flex_lien_v2">
+           <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Ancien Site</a>
+           <a href="./image/nouveau_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Nouveau Site</a>
+       </div>
+   
+   </div>
+   
+   
+   <div class="big_line"></div>
+   <div class="big_line"></div>
+   
+   
+   
+   
+   
+    <!--  bloc controle btn  -->   
+            <div class="stages_bloc_v2 stages_bg_color">
+   
+   
+   
+                   <div class="bloc_flex_v2">
+   
+   
+                       <div class="stage_text_v2">
+                           <h2 class="stages_text_h2">
+                               Création <strong class="color_strong fz_em">
+                                   interface version actuelle pour contrôle nouvelle version</strong> 
+                           </h2>
+                           <p class="stages_text_p  ">
+                               Lors de cette étape, le but était de <strong class="color_strong fz_em">
+                                   mettre à jour nos nouvelles tables, vues en temps réel</strong>.
+                                    <br>
+                                   C'est-à-dire que lorsque les employés font une action sur l'ancienne 
+                                   application avec les anciennes tables, il faut qu'en parrallèle les
+                                   nouvelles tables et vues elles aussi ce
+                                   <strong class="color_strong fz_em">mettent à jour automatiquement.</strong> 
+                                   <br> 
+                                   <br>
+                                   Pour cela, j'ai créer 2 nouvelles fonctions dans PostGresql appelés 
+                                   <strong class="color_strong fz_em">maj_selection et maj_chargement</strong>, 
+                                   dans le but d'alléger encore un peu le code php.
+                                   <br>
+                                   Là également il y a un travail de vérification sur plusieurs jours pour
+                                   vérifier qu'ils n'y aient pas d'erreurs.
+                           </p>
+                       </div>
+   
+                       <div class="stage_line"></div>
+   
+                       <div class="stage_img_v2">
+                           <a href="./image/ancien_site_original.png" target="_blank">
+                               <img class="stages_image_2" src="./image/ancien_site.png" alt="photo du boutton maj">
+                           </a>
+                       </div>
+   
+   
+                   </div>
+   
+   
+                   <div class="stage_flex_lien_v2">
+                       <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel ancien site</a>
+                       <a href="./image/nouveau_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel nouveau site</a>
+                       <a href="./image/code_maj_selection.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction maj_selection()</a>
+                       <a href="./image/code_chargement.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL fonction maj_chargement()</a>
+                       <a href="./image/modif_sel_article.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code SQL ajouter dans l'ancienne application </a>
+                   </div>
+   
+               </div>
+               
+   
+               <div class="big_line"></div>
+               <div class="big_line"></div>
+   
+   
+               <!-- bloc Fusion de l’application couvercle dans une nouvelle versione -->   
+               <div class="stages_bloc_v2">
+   
+   
+   
+                   <div class="bloc_flex_v2">
+   
+   
+                       <div class="stage_text_v2">
+                           <h2 class="stages_text_h2">
+                               <strong class="color_strong fz_em">Fusion de l’application couvercle</strong> dans une nouvelle version 
+                           </h2>
+                           <p class="stages_text_p  ">
+                               Pour cette dernière étape, j'avais pour but de fusionner leur deuxième application "couvercle"
+                               avec l'autre. 
+                               <br>
+                               <br>
+                               Tout d'abord j'ai commencé par analyser la structure complète de la nouvelle application dans 
+                               le code php, puis j'ai listés tous les <strong class="color_strong">fichiers à modifier</strong> pour intégrer ses
+                               nouvelles données dans l'application. 
+                               <br>
+                               Et également celle <strong class="color_strong">à créer</strong>. 
+                               <br>
+                               Ensuite, j'y ai été pas à pas. Je faisais des <strong class="color_strong">copies et sauvegardes</strong> régulièrement.
+                               Pour éviter tout problème. 
+                               <br>
+                               <br>
+                               <strong class="color_strong">Exemple de modifications :</strong> 
+                               <br>
+                               - <strong>ajout d'un droit</strong> (le droit "COU" pour que seule les personnes habilités aient accès aux fichiers couvercle) <br>
+                               - <strong>modification des types dans les input</strong> (type "number" au lieu de "text" pour éviter les erreurs lors des exécutions des formulaires) <br>
+                               - <strong>ajout de fonctions ou rajout d'option</strong> (l'application fonctionne avec des fonctions pour éviter de répéter du code, en utilisant leur fonction il manquait des critères telle que la modification lègere d'un style css d'un boutton par exemple vouloir le mettre en rouge plûtot qu'en gris )
+                           </p>
+                       </div>
+   
+                       <div class="stage_line"></div>
+   
+                       <div class="stage_img_v2">
+                           <a href="./image/commande_sauvegarde_bdd.JPG" target="_blank">
+                               <p class="voir_en_grand">Voir l'image en plus grand</p>
+                               <img class="stages_image_2" src="./image/commande_sauvegarde_bdd.JPG" alt="photo de la commande de sauvegarde">
+                           </a>
+                       </div>
+   
+   
+                   </div>
+   
+   
+                   <div class="stage_flex_lien_v2">
+                       <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel couvercke</a>
+                       <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Visuel menu nouveau site</a>
+                       <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Code PHP menuleft</a>
+                       <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Nouveau fichier dans VUE </a>
+                       <a href="./image/ancien_site_original.png" class="lien_photo_nouveau_site liens_externe" target="_blank">Nouveau fichier dans ACTION </a>
+                   </div>
+   
+               </div>
+   
+               <div class="big_line"></div>
+                <div class="big_line"></div>
+
+                
+        </div>       
+ </section>      
+
+   
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <address class="footer">4 rue des genets <br> 29190 PLeyben <br> France </address>
+        <iframe class="google_maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.9790670758453!2d-3.9639359845750466!3d48.226277652958295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48113bb74bf66977%3A0x33b4bd08f638b756!2s4%20Rue%20des%20Gen%C3%AAts%2C%2029190%20Pleyben!5e0!3m2!1sfr!2sfr!4v1653734621481!5m2!1sfr!2sfr" width="600" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="footer">© Titouan Le Brun | Tous droits Réservés</p>
+        <p class="footer"><a class="lien_contact footer" href="./contact.html">Contactez-moi</a> - 07 82 53 95 59</p>
+    </footer>
+</body>
+</html>
