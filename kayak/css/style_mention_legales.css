@@ -10,7 +10,7 @@
 
 @media screen and (max-width:600px) {
 
-    .text_presentation{
+    .text_presentation.bg_transparent{
         margin: 0;
     }
     body{
