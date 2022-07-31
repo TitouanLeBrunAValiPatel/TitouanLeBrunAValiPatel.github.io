@@ -1,0 +1,37 @@
+.flex_fabrication{
+    display: flex;
+    justify-content: space-around;
+}
+.presentation-sommes-nous{
+    text-align: center; 
+    padding: 0% 10% 0% 10%; 
+    margin: 0;
+    width: 50%;
+}
+.img_fabrication_1{
+    height: 100vh;
+    width: 100%;
+    background-image:  url("../images/img_fabrication1.jpg");
+    /* background-size: cover; */
+}
+.img_fabrication_2{
+    height: 100vh;
+    width: 100%;
+    background-image:  url("../images/img_fabrication2.jpg");
+}
+.text_simple{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.7em;
+}
+@media screen and (max-width:600px) {
+
+    .flex_fabrication{
+        display: block;
+    }
+    .presentation-sommes-nous{
+        width: auto;
+    }
+
+}

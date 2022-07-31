@@ -1,0 +1,24 @@
+.presentation-sommes-nous{
+    text-align: center; 
+    padding: 0% 10% 0% 10%; 
+    margin: 0;
+}
+.img-header-sommes_nous{
+    height: 50vh; 
+    background-image:  url("../images/bg_header_sommes_nous.jpg");
+}
+.text_simple{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.7em;
+}
+.section_somme_nous{
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media screen and (max-width:600px) {
+    .section_somme_nous{
+        flex-direction: column;
+    }
+}
