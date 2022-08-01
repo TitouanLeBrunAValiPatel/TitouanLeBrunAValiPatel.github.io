@@ -1,0 +1,15 @@
+.fz30
+{
+    font-size: 30px;
+    background: transparent;
+}
+.margin_l15{ margin-left: 15px;}
+.bloc_img_def{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.img_def{
+    max-width:100%;
+    max-height: 40vh;
+}

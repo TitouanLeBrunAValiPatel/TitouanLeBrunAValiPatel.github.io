@@ -1,34 +1,6 @@
-/* Body */
-
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #1d1d1d;
-    color:  #FFFFFF;
-    font-size: 18px;
-}
-
-/* Section youtubeurs */ 
-
 .youtubeurs{
     padding: 10px;
 }
-
-/* h2 suivis_youtubeurs */
-
-
-.encadre_text{
-    font-size: 40px;
-    border: 1px solid white;
-    margin: 10px 10% 10px 10%;
-    text-align: center;
-    padding: 10px;
-    background: transparent;
-}
-
-/* Fin h2 suivis_youtubeurs */ 
-
-/* div youtubeurs flex */
 
 .flex{
     display: flex;
@@ -39,82 +11,10 @@
     margin: 10px;
 }
 
-/* Fin div youtubeurs flex */ 
-
-/* div bloc_youtubeur */
-
-.encadre_bloc{
-    padding: 10px;
-    background-color: #181818;
-    padding: 10px;
-    border: 1px solid #08fdd8;
-    border-radius: 7px;
-    margin: 1%;
-    
-    max-width: 500px;
-}
-/* Fin div bloc_youtubeur */ 
-
-
-
-/* h2 nom_youtubeurs */
-.h2_title_bloc{
-    background: transparent;
-    font-size: 25px;
-    font-weight: 900;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/* Fin h2 nom_youtubeurs */
-
-/* a lien externe */
-
-.liens_externe{
-    display: inline-block; /*pour se comporter comme des bloc au lieu des inlines*/
-    margin: 5px;
-    padding: 10px;
-    background-color: #181818;
-    padding: 10px;
-    border: 1px solid #08fdd8;
-    border-radius: 7px;
-    text-decoration: none;
-}
-.liens_externe:hover{
-    background: #090909;
-    transition: ease-out 0.5s;
-}
-
-
-/* Fin a lien youtubeurs */
-
-/* Fin Section youtubeurs */
-
-
-/* Section sites_learn */ 
-
-.section_color{
-    background: #0a0a0a;
-    padding: 10px;
-}
-
-/* image page_accueil_site */
-
 .page_accueil_site{
     max-width: 500px;
     width: 100%; /* S'adapte à son parent */ 
 }
 
-/* Fin image page_accueil_site */ 
-
-/* p p_description_bloc */
-
-.p_description_bloc{background: transparent;}
-/* Fin p p_description_bloc */
-
-/* Fin Section sites_learn */ 
-
-
-
-/* Fin du Body */
 
 

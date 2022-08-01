@@ -1,105 +1,13 @@
-/* Body */
+.projets_purpose{margin: 10px;}
 
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #1d1d1d;
-    color:  #FFFFFF;
-    font-size: 18px;
-}
-
-/* Section projets */
-
-/* div projet en tete */ 
-
-
-.encadre_text{
-    font-size: 40px;
-    border: 1px solid white;
-    margin: 10px 35% 10px 35%;
-    text-align: center;
-    padding: 10px;
-    background: transparent;
-}
-
-.projets_purpose{
-    margin: 10px;
-}
 .projets_purpose{
     font-size: 30px;
     text-align: center;
-    background: transparent;}
+    background: transparent;
+}
 
 .projets_strong_underline{
     text-decoration: underline;
     margin-right: 1%;
     background: transparent;
-}
-
-
-/* Fin div projet en tete*/
-
-/* div grid */
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3,33%);    
-    padding: 10px;
-    background-color: #262424;
-    padding: 10px;
-    border: 1px solid #08fdd8;
-    border-radius: 7px;
-    margin: 1%;
-}
-
-/* Fin div grid */ 
-
-
-/* div encadre_bloc */
-
-.encadre_bloc{
-    padding: 10px;
-    background-color: #181818;
-    border: 1px solid #08fdd8;
-    border-radius: 7px;
-    margin: 1%;
-    text-align: center;
-}
-
-.h2_title_bloc{
-    background: transparent;
-    font-size: 25px;
-    font-weight: 900;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.p_description_bloc{background: transparent;}
-
-
-/* Fin div encadre_bloc */ 
-
-.section_color{
-    background: #0a0a0a;
-    padding: 10px;
-}
-
-/* Fin Section projets */ 
-
-/* Fin du Body */
-
-/* Partie responsive */
-
-@media screen and (max-width:1200px){
-
-    .grid{grid-template-columns: repeat(2,50%);}
-    .encadre_text{margin: 10px 20px 10px;}
-
-
-}
-
-
-@media screen and (max-width:900px){
-
-    .grid{grid-template-columns: repeat(1,100%);}
-
 }

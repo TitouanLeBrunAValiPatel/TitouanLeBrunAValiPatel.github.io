@@ -1,32 +1,6 @@
-/* Body */
-:root{
-    --background-all : #fff;
-    --background-block : rgb(173, 173, 173);
-    --color-all : #000;
-
-}
-*{
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-all) ;
-    color:  var(--color-all);
-    font-size: 18px;
-}
-
-/* Section block cv */
-
-.encadre_text{
-    font-size: 40px;
-    border: 1px solid var(--color-all);
-    margin: 10px 35% 10px 35%;
-    text-align: center;
-    padding: 10px;
-    background: transparent;
-}
-
 .border{
-    border: 1px solid #08fdd8;
-    box-shadow: 10px 5px 5px #08fdd8;
+    border: 1px solid var(--favorit-color);
+    box-shadow: 10px 5px 5px var(--favorit-color);
     margin: 20px 25% 20px 25%;
     border-radius: 20px;
 
@@ -46,24 +20,7 @@
     max-width: 100%; /* limiter à la longueur de leur parent */
 }
 
-.lien{
-    border: 1px solid #08fdd8;
-    border-radius: 30px;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block; /* (par defaut a est un inline) puisse prendre des dimensions et pouvoir mettre d'autre balise sur la même ligne*/
-    text-decoration: none;
-}
-.lien:hover{
-    background: #08fdd8;
-    border: 1px solid white;
-    transition: all 0.5s;
-    color: var(--color-all);
-}
 
-/* Fin Section block cv */
 
 
 /* Section rappel menu */
@@ -83,7 +40,7 @@ section.rappel_menu{
     text-align: center;
     background-color: var(--background-block);
     padding: 10px;
-    border: 1px solid #08fdd8;
+    border: 1px solid var(--favorit-color);
     border-radius: 7px;
 }
 .identity_img
@@ -110,9 +67,7 @@ section.rappel_menu{
         margin: 0 10px 0 10px;
         box-shadow: none;
     }
-    
     section.rappel_menu{grid-template-columns: 1fr;}
-    .encadre_text{margin: 10px 20px 10px;}
 }
 
 /* Fin du Body */ 

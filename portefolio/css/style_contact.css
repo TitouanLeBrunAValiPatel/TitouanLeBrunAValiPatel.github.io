@@ -1,92 +1,35 @@
-/* Body */
-
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #1d1d1d;
-    color:  #FFFFFF;
-    font-size: 18px;
+.formulaire{
+    margin: 10px;
 }
-/* Section contact */ 
-
-.encadre_text{
-    font-size: 40px;
-    border: 1px solid white;
-    margin: 10px 10% 10px 10%;
-    text-align: center;
-    padding: 10px;
+.lb_contact{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
     background: transparent;
+    display: inline-block;
+    width: 100%;
+    text-align: start;
+
 }
-
-/* Form */
-
-/* Fieldset */
-
-/* Legend */ 
-
-legend{font-size: 25px; font-weight: 700;}
-
-/* Fin legend */
-fieldset{
-    width: 50%; 
-    margin: 10px 20% 10px 25%; /* a enlever lors de la partie responsive */
-    border-radius: 3px;
-    border: 3px solid #08fdd8;
-} 
-
-.contact_flex{
-    display: flex;
-    flex-direction: column;
+.fiel_contact{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
+    background: transparent;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fiel_contact:hover{
+    border: 1px solid #000;
+}
+.submit_contact{
+    border: none;
+    background: #000;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
+    width: 100%;
     padding: 10px;
-    max-width: 500px;
 }
-
-.espacement_input{padding: 5px;}
-
-/* button send  and reset */ 
-.submit{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 7px;
+.submit_contact:hover{
+    background: rgb(139, 138, 138);
+    transition: all 0.7s ;
 }
-.submit:hover{
-    color: #08fdd8;
-    cursor: pointer;
-
-    background: #000;
-}
-
-.reset{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-radius: 7px;
-}
-.reset:hover{
-    color: #08fdd8;
-    cursor: pointer;
-
-    background: #000;
-}
-/* Fin button send */ 
-
-
-
-/* Fin Fieldset */
-/* Fin du Form */
-
-/* Fin Section contact */ 
-
-/* Fin du Body */ 
-
-/* Partie Responsive */ 
-
-@media screen and (max-width:1200px){
-
-    fieldset{margin: 10px 0% 10px 25%;}
-}
-
-
-@media screen and (max-width:700px){
-
-    fieldset{width: 95%; margin:10px;}
-}
-
-

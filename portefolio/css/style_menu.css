@@ -53,16 +53,16 @@ transform: translate(0, -50%);
 }
 
 .lien_back_history:hover .trait_retour{ /* espace très important pour modifier le deuxieme element en fonction du premier*/
-    background: #08fdd8;
+    background: var(--favorit-color);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .lien_back_history:hover .trait_retour::after{ 
-    background: #08fdd8;
+    background: var(--favorit-color);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 .lien_back_history:hover .trait_retour::before{ 
-    background: #08fdd8;
+    background: var(--favorit-color);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
