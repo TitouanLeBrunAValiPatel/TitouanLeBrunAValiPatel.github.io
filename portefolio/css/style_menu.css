@@ -1,11 +1,8 @@
 /* Body */
-
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #1d1d1d;
-    color:  #FFFFFF;
-    font-size: 18px;
+:root{
+    --background-menu : #000;
+    --background-menu-hover: #181818;
+    --color-menu : #fff;
 }
 
 /* header */
@@ -13,12 +10,12 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #000;
+    background-color: var(--background-menu);
     padding: 10px 5px 10px;
     margin-bottom: 10px;
     position: relative;
 }
-.menu_navigation{background: black}
+.menu_navigation{background: var(--background-menu);}
 
 /*Fleche retour */
 
@@ -34,7 +31,7 @@ margin-left: 10px;
 .trait_retour, .trait_retour::after, .trait_retour::before{
 width: 20px;
 height: 2px;
-background: white;
+background: var(--color-menu);
 border-radius: 10%;
 display: inline-block;
 position: absolute;
@@ -73,7 +70,8 @@ transform: translate(0, -50%);
 
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #000;
+    background: transparent;
+    color: var(--color-menu);
 }
 
 /* Menu de navigation */
@@ -83,14 +81,15 @@ h1{
 }
 .liens{
     margin-right: 10px;
-    background-color: black;
-    text-decoration: none;    
+    background-color: var(--background-menu);
+    text-decoration: none;
+    color: var(--color-menu);    
 }
 .liens:hover{
     text-decoration: underline;
 }
 .liste_menu_navigation{
-    background: black;
+    background: var(--background-menu);
 }
 .menu_deroulant{height: 0%;}
 
@@ -137,7 +136,7 @@ h1{
         right: 15px;
         top: 15px;
         border-radius: 7px;
-        background: #fff;
+        background: var(--color-menu);
         z-index: 70;
     }
     .trait_menu_deroulant::before{
@@ -147,7 +146,7 @@ h1{
         position: absolute;
         top: 9px;
         border-radius: 7px;
-        background: #fff;
+        background: var(--color-menu);
     }
     .trait_menu_deroulant::after{
         content: "";
@@ -156,7 +155,7 @@ h1{
         position: absolute;
         top: -9px;
         border-radius: 7px;
-        background: #fff;
+        background: var(--color-menu);
     }
 
     .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant{background: transparent;}
@@ -174,7 +173,7 @@ h1{
         transform: translate(0);
         width: 100%;
         height: 100vh;
-        background: #000;
+        background: var(--background-menu);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -189,14 +188,10 @@ h1{
         padding: 20px;
     }
     .checkbox_menu_deroulant:checked ~ .menu_navigation .liens:hover{
-        background: #1d1d1d;
+        background: var(--background-menu-hover);
         padding: 20px;
         text-decoration: none;
     }
 
      
-}
-
-@media screen and (max-width:800px){
-
 }

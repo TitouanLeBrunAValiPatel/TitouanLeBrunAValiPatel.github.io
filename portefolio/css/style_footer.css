@@ -1,14 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #1d1d1d;
-    color:  #FFFFFF;
-    font-size: 18px;
+:root{
+    --background-footer: #858282;
+    --color-footer: #5d5d61;
 }
-.lien_contact{color: #5d5d61;}
+.lien_contact{color: var(--color-footer);}
 .lien_contact:hover{
     transition: all 0.5s;
-    color: #5d5d6182;
+    color: var(--color-footer);
 }
 
 .footer{
@@ -19,7 +16,7 @@
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: #858282;
+    background-color: var(--background-footer);
     opacity: 0.8;
     text-align: center;
     color: #272729;

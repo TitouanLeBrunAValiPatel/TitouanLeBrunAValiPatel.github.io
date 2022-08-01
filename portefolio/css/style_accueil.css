@@ -1,10 +1,15 @@
 /* Body */
+:root{
+    --background-all : #fff;
+    --background-block : rgb(173, 173, 173);
+    --color-all : #000;
 
+}
 *{
     margin: 0;
     padding: 0;
-    background-color: #1d1d1d;
-    color:  #FFFFFF;
+    background-color: var(--background-all) ;
+    color:  var(--color-all);
     font-size: 18px;
 }
 
@@ -12,7 +17,7 @@
 
 .encadre_text{
     font-size: 40px;
-    border: 1px solid white;
+    border: 1px solid var(--color-all);
     margin: 10px 35% 10px 35%;
     text-align: center;
     padding: 10px;
@@ -32,12 +37,12 @@
     align-items: center;
     text-align: justify;
     border-radius: 20px;
-    background: #181818;
+    background: var(--background-block);
 }
 
 .cv_text, .cv_photo, .text_p{
     margin: 10px;
-    background: #181818;
+    background: var(--background-block);
     max-width: 100%; /* limiter à la longueur de leur parent */
 }
 
@@ -55,7 +60,7 @@
     background: #08fdd8;
     border: 1px solid white;
     transition: all 0.5s;
-    color: #1d1d1d;
+    color: var(--color-all);
 }
 
 /* Fin Section block cv */
@@ -76,10 +81,22 @@ section.rappel_menu{
     margin: 10px 10% 10px 10%; /*pouvoir centrer les bulles */
     max-width: 500px;
     text-align: center;
-    background-color: #181818;
+    background-color: var(--background-block);
     padding: 10px;
     border: 1px solid #08fdd8;
     border-radius: 7px;
+}
+.identity_img
+{
+    max-height: 50vh;
+    max-width: 100%;
+    border-radius: 7%;
+    background: transparent;
+
+}
+.img{
+    padding: 10px;
+    background: transparent;
 }
 
 /*Fin Section rappel menu */
