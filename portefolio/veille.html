@@ -30,6 +30,13 @@
                 <a href="./certifications.html" class="liens">Certifications</a>
                 <a href="./veille.html" class="liens">Veille</a>
                 <a href="./stages.html" class="liens">Stages</a>
+
+                <div class="mode_center">
+                    <label class="mode" for="darkmode">
+                        <div class="bool"></div>
+                    </label>
+                    <input class="check" type="checkbox" name="darkmode" id="darkmode">
+                </div>
             </nav>
         </div>  
 
@@ -41,14 +48,14 @@
 
         <h2 class="suivis_youtubeurs encadre_text">Les youtubeurs qui me tiennent informés</h2>
         <div class="youtubeurs_flex flex">
-            <div class="bloc_youtubeur encadre_bloc">
+            <div class="bloc_youtubeur encadre_bloc shadow">
                 <img src="./image/logo_graven.jpg" alt="Logo de Graven" class="logo_youtubeurs"></img>
                 <h2 class="nom_youtubeurs h2_title_bloc">Graven</h2>
                 <a href="https://www.twitch.tv/gravenyt" class="lien_youtubeurs lien_twitch liens_externe" target="_blank">Voir sa chaîne Twitch</a>
                 <a href="https://www.youtube.com/c/Gravenilvectuto/playlists" class="lien_youtubeurs lien_youtube liens_externe" target="_blank">Voir sa chaîne Youtube</a>
             </div>
     
-            <div class="bloc_youtubeur encadre_bloc">
+            <div class="bloc_youtubeur encadre_bloc shadow">
                 <img src="./image/logo_grafikart.jpg" alt="Logo de Grafikart" class="logo_youtubeurs"></img>
                 <h2 class="nom_youtubeurs h2_title_bloc">Grafikart</h2>
                 <a href="https://www.twitch.tv/grafikart" class="lien_youtubeurs lien_twitch liens_externe" target="_blank">Voir sa chaîne Twitch</a>
@@ -62,22 +69,22 @@
 
         <h2 class="learning encadre_text">Sites pour apprendre le HTML/CSS efficaement</h2>
         <div class="bloc_sites_flex flex">
-            <div class="bloc_site_learn encadre_bloc">
+            <div class="bloc_site_learn encadre_bloc shadow">
                 <img src="./image/img_site_openclassrooms.JPG" alt="Site openclassrooms" class="page_accueil_site">
                 <h2 class="name_site h2_title_bloc"><a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3" class="lien_site liens_externe" target="_blank">Openclassrooms</a></h2>
                 <p class="p_description_bloc">Apprendre les bases du HTML/CSS</p>
             </div>
-            <div class="bloc_site_learn encadre_bloc">
+            <div class="bloc_site_learn encadre_bloc shadow">
                 <img src="./image/img_site_flexbox_froggy.JPG" alt="Site flexbox froggy" class="page_accueil_site">
                 <h2 class="name_site h2_title_bloc"><a href="https://flexboxfroggy.com/#fr" class="lien_site liens_externe" target="_blank">Flexbox Froggy</a></h2>
                 <p class="p_description_bloc">Apprendre les Flexbox en CSS</p>
             </div>
-            <div class="bloc_site_learn encadre_bloc">
+            <div class="bloc_site_learn encadre_bloc shadow">
                 <img src="./image/img_site_grid_garden.JPG" alt="Site grid garden" class="page_accueil_site">
                 <h2 class="name_site h2_title_bloc"><a href="https://cssgridgarden.com/#fr" class="lien_site liens_externe" target="_blank">Grid Garden</a></h2>
                 <p class="p_description_bloc">Apprendre les Grid en CSS</p>
             </div>
-            <div class="bloc_site_learn encadre_bloc">
+            <div class="bloc_site_learn encadre_bloc shadow">
                 <img src="./image/img_site_mdn.JPG" alt="Site MDN css" class="page_accueil_site">
                 <h2 class="name_site h2_title_bloc"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="lien_site liens_externe" target="_blank">MDN</a></h2>
                 <p class="p_description_bloc">Connaître toutes les possibilités d'une Propriété</p>
@@ -91,17 +98,17 @@
         
         <h2 class="sites_tricks_h2 encadre_text">Concevoir des sites propres et au goût du jour</h2>
         <div class="sites_tricks_flex flex">
-            <div class="bloc_site_trick encadre_bloc">
+            <div class="bloc_site_trick encadre_bloc shadow">
                 <img src="./image/img_site_css_validator.JPG" alt="Site Css Validator" class="page_accueil_site">
                 <h2 class="name_site_trick h2_title_bloc"><a href="https://jigsaw.w3.org/css-validator/" class="lien_site_trick liens_externe" target="_blank">Css Validator</a></h2>
                 <p class="p_description_bloc">Utile pour vérifier si son site n'a pas de balise, attribut, texte superflu</p>
             </div>
-            <div class="bloc_site_trick encadre_bloc">
+            <div class="bloc_site_trick encadre_bloc shadow">
                 <img src="./image/img_site_caniuse.JPG" alt="Site can i use" class="page_accueil_site">
                 <h2 class="name_site_trick h2_title_bloc"><a href="https://caniuse.com/" class="lien_site_trick liens_externe" target="_blank">Can I Use</a></h2>
                 <p class="p_description_bloc">Permet de ce tenir à jour sur les dernières versions/fonctionnalité qu’a les navigateurs</p>
             </div>
-            <div class="bloc_site_trick encadre_bloc">
+            <div class="bloc_site_trick encadre_bloc shadow">
                 <img src="./image/img_site_awwwards.JPG" alt="Site awards" class="page_accueil_site">
                 <h2 class="name_site_trick h2_title_bloc"><a href="https://www.awwwards.com/" class="lien_site_trick liens_externe" target="_blank">Les awwwards</a></h2>
                 <p class="p_description_bloc">Permet de se tenir à jour sur les tendances du moment</p>
@@ -119,6 +126,11 @@
         <iframe class="google_maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2657.9790670758453!2d-3.9639359845750466!3d48.226277652958295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48113bb74bf66977%3A0x33b4bd08f638b756!2s4%20Rue%20des%20Gen%C3%AAts%2C%2029190%20Pleyben!5e0!3m2!1sfr!2sfr!4v1653734621481!5m2!1sfr!2sfr" width="600" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="footer">© Titouan Le Brun | Tous droits Réservés</p>
         <p class="footer"><a class="lien_contact footer" href="./contact.html">Contactez-moi</a> - 07 82 53 95 59</p>
-    </footer>    
+    </footer>   
+    
+    
+    <!-- #################################################### js ############################################## -->
+
+<script src="./js/darkmode.js"></script>
 </body>
 </html>

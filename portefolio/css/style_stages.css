@@ -47,7 +47,7 @@
 
 .stages_bloc_v2
 {
-    width: 100%;
+    max-width: 100%;
     border: 1px solid var(--favorit-color);
     border-radius: 7px;
     background: var(--background-block);
@@ -61,7 +61,6 @@
     flex-wrap: wrap;
     justify-content: center;
     background: transparent;
-
 }
 .stage_img_v2{background: transparent;}
 

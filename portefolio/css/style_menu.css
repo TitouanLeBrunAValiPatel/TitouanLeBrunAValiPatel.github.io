@@ -93,6 +93,36 @@ h1{
 }
 .menu_deroulant{height: 0%;}
 
+
+/* ##########################" mode nuit ####################################" */
+
+.mode_center{background: transparent; text-align: center; padding:10px 10px 0px 10px;}
+.mode{
+  display: inline-block;
+  position: relative;
+  background: var(--favorit-color);
+  width: 50px;
+  border: 1px solid var(--color-all-hover);
+  height: 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+.check{display: none;}
+.bool{
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--darkmode);
+  transition:  500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.bool-translate{
+  transform: translateX(28px);
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1)  ; 
+}
+
 /* Fin du menu de navigation */
 
 

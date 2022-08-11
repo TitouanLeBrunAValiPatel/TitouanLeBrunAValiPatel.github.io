@@ -1,8 +1,9 @@
 const mode = document.querySelector('.mode');
 const check = document.querySelector('.check');
-console.log(check);
-console.log(mode);
+const bool = document.querySelector('.bool');
 
 check.addEventListener('click', () =>{
-    console.log("ca marge");
+    bool.classList.toggle('bool-translate');
+    document.body.classList.toggle('dark-theme');
+
 });
