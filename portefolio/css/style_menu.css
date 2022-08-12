@@ -229,9 +229,7 @@ h1{
         background: var(--background-menu-hover);
         padding: 20px;
         text-decoration: none;
-    }
-
-     
+    }    
 }
 
 @media screen and (max-height:600px){

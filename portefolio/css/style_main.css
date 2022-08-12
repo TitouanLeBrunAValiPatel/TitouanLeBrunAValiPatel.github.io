@@ -1,7 +1,7 @@
 :root {
   --background-all: #fff;
   --background-block: #dcdcdc;
-  --background-block-grid: #cfcfcf;
+  --background-block-grid: #00000000;
   --color-all: #000;
   --color-all-hover: #fff;
   --favorit-color: #cdc8c8 ;
@@ -125,6 +125,7 @@ strong {
 }
 .p_description_bloc {
   background: transparent;
+  padding: 5px;
 }
 .section_color {
   background: var(--background-section-color);
