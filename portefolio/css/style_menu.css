@@ -139,11 +139,12 @@ h1{
 
     .menu_navigation{
         position: absolute;
-        top: 0;
+        top: 40px;
         right: 0;
         left: 0;
         text-align: center;
         transform: translateY(-100%);
+        opacity: 0;
     }
 
 
@@ -168,6 +169,8 @@ h1{
         border-radius: 7px;
         background: var(--color-menu);
         z-index: 70;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
     }
     .trait_menu_deroulant::before{
         content: "";
@@ -177,6 +180,8 @@ h1{
         top: 9px;
         border-radius: 7px;
         background: var(--color-menu);
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
     }
     .trait_menu_deroulant::after{
         content: "";
@@ -186,11 +191,15 @@ h1{
         top: -9px;
         border-radius: 7px;
         background: var(--color-menu);
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
     }
 
     .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant{background: transparent;}
-    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::after{transform: rotate(-45deg); top: 0;}
-    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::before{transform: rotate(45deg); top: 0;}
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::after{transform: rotate(-45deg); top: 0;        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant .trait_menu_deroulant::before{transform: rotate(45deg); top: 0;        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
 
     
     .checkbox_menu_deroulant:checked ~ .btn_menu_deroulant{
@@ -200,9 +209,9 @@ h1{
         z-index: 10;
     }
     .checkbox_menu_deroulant:checked ~  .menu_navigation{
-        transform: translate(0);
+        opacity: 1;
+        transform: translateY(0);
         width: 100%;
-        height: 100vh;
         background: var(--background-menu);
         display: flex;
         flex-direction: column;
@@ -210,7 +219,6 @@ h1{
         height: 70vh;
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
         z-index: 15;
-        margin-top: 40px;
     }
 
     .checkbox_menu_deroulant:checked ~ .menu_navigation .liens{
@@ -224,4 +232,11 @@ h1{
     }
 
      
+}
+
+@media screen and (max-height:600px){
+
+    .checkbox_menu_deroulant:checked ~  .menu_navigation{
+        height: auto;
+    }
 }

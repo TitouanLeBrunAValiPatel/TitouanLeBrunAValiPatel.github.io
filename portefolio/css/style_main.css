@@ -12,7 +12,7 @@
   --border_bloc_2 : #000;
   --darkmode:#fff;
 }
-
+/* Important que le dark theme soit apres le root car il va ecraser les valeurs précédentes  */
 .dark-theme{
   --background-all: rgb(20,20,20);
   --background-block: #343333;
@@ -40,7 +40,6 @@
 strong {
   background: transparent;
 }
-/*mode nuit jour */
 
 
 .big_line {
@@ -145,3 +144,4 @@ strong {
     grid-template-columns: repeat(1, 100%);
   }
 }
+
