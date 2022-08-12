@@ -130,6 +130,24 @@ strong {
   background: var(--background-section-color);
   padding: 10px;
 }
+
+.encadre_img_div{background: transparent;}
+
+.encadre_img{
+  max-height: 50vh;
+  max-width: 100%;
+  background: transparent;
+}
+
+.liens_div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid var(--favorit-color);
+  background: transparent;
+}
+
+
 @media screen and (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(2, 50%);

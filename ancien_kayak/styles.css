@@ -1,0 +1,247 @@
+/* @font-face {
+    font-family: 'chapazaregular';
+    src: url('font/chapaza-webfont.woff2') format('woff2'),
+         url('font/chapaza-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+body{
+    margin: 0 auto;
+    font-family: 'chapazaregular', sans-serif;
+}
+
+    /* tete de page */
+header.header {
+    display: flex;
+    align-items: center;}
+
+
+
+section.top-page{
+    background: url("images/top.jpg");
+    background-size: cover; /*l'image ne se rèpete pas*/
+    background-position: center; /*centrer l'image*/
+    height: 300px;
+    }
+h1.big-title{
+    color:#ffffff;
+    text-align: center;
+    font-size: 45px;
+}
+
+
+    /* -- Pied de page -- */
+.landing-page{
+    padding: 20px 50px;
+}
+/* menu de navigation */
+nav{
+    width: 100%;
+    background: #272727;
+    height: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+}
+nav li{
+    margin-right: 1rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    border-bottom:1px solid #24778b;
+    transition: 250ms;
+    color: #24778b;
+}
+
+/* -- Corps des pages -- */
+
+h1.body, p.body{
+    text-align: center;
+}
+h2.body{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+h3.body{
+    margin-left: 20px;
+}
+
+/* -- corp philosophie -- */
+
+p.body-philosophie{
+    max-width: 900px;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+/* -- corp de qui sommes-nous -- */
+p.body-2{
+    text-align: right;
+    color: rgb(181,181,181);
+    margin-right: 20px;
+}
+p.body-1 {
+    max-width: 600px;
+    text-align: center;
+}
+div.body{
+    min-height: 100%;
+    position: relative;
+
+}
+.body-img{
+    right: 100px;
+    top: 80px;
+    position: absolute;
+}
+
+/* -- corp contact--*/
+
+
+/* -- corp fabrication -- */
+
+ol.body{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+ol.body img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+ol.body li{
+    margin-right: 1rem;
+}
+
+
+/* -- Pied de page -- */
+
+footer{
+    width: 100%;
+    display: flex;
+    background: #272727;
+    flex-direction: column;
+    color: white;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+}
+.horaire{
+    margin-right: 0.5rem;
+}
+.mentions{
+    margin-right: 0.5rem;
+}
+.contact{
+    margin-right: 0.5rem;
+}
+.adresse{
+    margin-right: 0.5rem;
+}
+
+
+
+footer .services a{
+    color: white;
+    text-decoration: none;
+}
+footer .services a:hover{
+    color: #24778b;
+    
+}
+/* contact */
+
+fieldset{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5%;
+    width: 30%;
+}
+label{
+    vertical-align: top;
+}
+
+/* -- Newsletter -- */
+.container{color: white;}
+.container p{
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+.email-box{
+    height: 40px;
+    display: flex;/*qu'il prenne en compte les paramètres*/
+    justify-content: center;
+}
+.email-box i{
+    background-color: #272727;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #24778b;
+}
+.email-box button { 
+    background-color: #272727;
+    border: 2px solid #24778b;
+    color: white;
+    width: auto;
+    padding: 0 10px;
+    text-transform: uppercase; /*Tout mettre en majuscule*/
+    cursor: pointer;/*le curseur change quand on passedessus*/
+}
+
+
+
+.email-box button:hover{background-color: #24778b;transition: 0.6s;}
+.email-box a{text-decoration: none;color: #ffffff;text-transform: uppercase;}
+.email-box a:hover{color: #ffffff;}
+.email-box .tbox{width: 0px;}
+.email-box:hover > .tbox,.tbox:focus{padding: 0 10px;width: 150px;transition: 0.6s;} /*largueur de 150px quand on passe dessus*/
+
+
+/*adapter écran téléphone*/
+@media screen and (max-width:680px)/*si la taille de l'écran est en dessous de 680px*/{
+
+
+    nav ul{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: auto;
+        list-style-type: none;
+        
+    }
+    nav li.qui{
+        grid-column-start: 2;
+        grid-column-end: span 2;
+
+    }
+    h1.big-title{font-size: 30px;}
+    footer{
+        width: auto;
+        padding-left: 1rem;
+    }
+    .services{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    /*fabrication*/
+    
+}
