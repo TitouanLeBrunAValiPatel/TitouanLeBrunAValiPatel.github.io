@@ -28,14 +28,18 @@
 section.rappel_menu{
     display: grid;
     grid-template-columns: 50% 50%;
-
+    width: 100%;
+    margin: auto;
 }
 .lien_menu h2{
     margin-left: 0;
     margin-right: 0;
 }
+
 .lien_menu{
-    margin: 10px 10% 10px 10%; /*pouvoir centrer les bulles */
+    /* margin: 10px 10% 10px 10%;  */
+    margin: 10px auto 10px auto   ;
+    width: 80%;
     max-width: 500px;
     text-align: center;
     background-color: var(--background-block);

@@ -16,7 +16,6 @@ header{
     position: relative;
 }
 .menu_navigation{background: var(--background-menu);}
-.h1_home{text-decoration: none; background: var(--background-menu); color: var(--color-menu);}
 /*Fleche retour */
 
 .lien_back_history{
@@ -68,11 +67,13 @@ transform: translate(0, -50%);
 
 /*Fin de fleche retour*/
 
-h1{
+h1, .h1_home{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: transparent;
+    background: var(--background-menu);
     color: var(--color-menu);
+    text-decoration: none;
 }
+
 
 /* Menu de navigation */
 
