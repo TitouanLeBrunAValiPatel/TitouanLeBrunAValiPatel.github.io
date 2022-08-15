@@ -16,7 +16,7 @@ header{
     position: relative;
 }
 .menu_navigation{background: var(--background-menu);}
-
+.h1_home{text-decoration: none; background: var(--background-menu); color: var(--color-menu);}
 /*Fleche retour */
 
 .lien_back_history{
@@ -143,7 +143,7 @@ h1{
         right: 0;
         left: 0;
         text-align: center;
-        transform: translateY(-100%);
+        transform: translateY(-200%);
         opacity: 0;
     }
 
