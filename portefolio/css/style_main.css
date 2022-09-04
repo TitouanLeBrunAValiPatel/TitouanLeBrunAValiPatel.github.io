@@ -164,3 +164,27 @@ strong {
   }
 }
 
+
+
+/* apparition */
+
+.animation{
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.animation2{
+  opacity: 0;
+}
+.animation-f{
+  opacity: 1;
+  transition: 1s linear;
+}
+
+.animation-left{
+  opacity: 1;
+  transition: 1s ease-in-out;
+  transform: translateX(0px);
+
+}
+

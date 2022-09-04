@@ -74,4 +74,13 @@ section.rappel_menu{
     section.rappel_menu{grid-template-columns: 1fr;}
 }
 
+
+/* apparition */
+
+.animation{
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+
 /* Fin du Body */ 
