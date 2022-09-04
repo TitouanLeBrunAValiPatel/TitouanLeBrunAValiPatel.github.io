@@ -32,7 +32,8 @@
   padding: 0;
   background-color: var(--background-all);
   color: var(--color-all);
-  font-size: 18px;
+  font-size: 22px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .shadow{
   box-shadow: 10px 5px 5px var(--favorit-color);
