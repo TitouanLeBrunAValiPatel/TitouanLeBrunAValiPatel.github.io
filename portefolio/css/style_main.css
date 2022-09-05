@@ -1,11 +1,11 @@
 :root {
   --background-all: #fff;
-  --background-block: #dcdcdc;
-  --background-block-grid: #00000000;
+  --background-block: #FFDAB9;
+  --background-block-grid: #fff;
   --color-all: #000;
   --color-all-hover: #fff;
   --favorit-color: #cdc8c8 ;
-  --background-color-hover: #a9a9a9;
+  --background-color-hover: #dab89b;
   --color-strong: #000;
   --background-section-color: #fff;
   --big-line: #fff;
