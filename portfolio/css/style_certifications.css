@@ -1,0 +1,8 @@
+.same_height_img{height: 150px;background: transparent;}
+
+.certification_img{
+    background: #fff;
+    max-height: 150px;
+    border-radius: 7px;
+}
+.background_color_transparent{background: transparent;}

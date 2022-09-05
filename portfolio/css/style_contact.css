@@ -1,0 +1,35 @@
+.formulaire{
+    margin: 10px;
+}
+.lb_contact{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
+    background: transparent;
+    display: inline-block;
+    width: 100%;
+    text-align: start;
+
+}
+.fiel_contact{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
+    background: transparent;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fiel_contact:hover{
+    border: 1px solid #000;
+}
+.submit_contact{
+    border: none;
+    background: #000;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; /* text kaymor , menu , footer*/
+    width: 100%;
+    padding: 10px;
+}
+.submit_contact:hover{
+    background: rgb(139, 138, 138);
+    transition: all 0.7s ;
+}

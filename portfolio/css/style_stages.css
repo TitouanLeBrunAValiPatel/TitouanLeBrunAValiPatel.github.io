@@ -1,0 +1,77 @@
+.bloc_stage{padding: 20px;}
+.stages_place, .stages_purpose{margin: 10px;}
+.stages_place{font-size: 40px;}
+.stages_purpose{
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+}
+
+.stages_strong_underline{
+    text-decoration: underline;
+    margin-right: 1%;
+    background: transparent;
+}
+.stages_plan{
+    margin: 5%;
+    background: transparent;
+}
+.stages_each_step{
+    font-size: 1.4em;
+    margin: 10px;
+    background: transparent;
+}
+/* fin div same_height_img */ 
+.stages_text_h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 1%;
+    font-weight: bolder;
+    text-align: center;
+    background: transparent;
+}
+
+.fz_em{font-size: 1em;}
+
+.stages_text_p{
+    padding-right: 3%;
+    background: transparent;
+}
+.scroll{
+    overflow: scroll;
+    max-height: 200px;
+}
+.break{overflow-wrap: break-word;}
+
+.li_bg_transparent{background: transparent;}
+
+.stages_bloc_v2
+{
+    max-width: 100%;
+    border: 1px solid var(--favorit-color);
+    border-radius: 7px;
+    background: var(--background-block);
+    padding: 5px;
+    margin: 5px;
+    height: auto;
+}
+.bloc_flex_v2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+}
+
+.stage_text_v2
+{
+    max-width: 50%;
+    padding: 5px;
+    background: transparent;
+}
+
+@media screen and (max-width:900px)
+{
+    .stage_text_v2{max-width: 100%;}
+}
+
