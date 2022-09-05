@@ -52,8 +52,9 @@
     border-radius: 7px;
     background: var(--background-block);
     padding: 5px;
-    margin: 5px;
+    margin: auto;
     height: auto;
+    max-width: 1000px;
 }
 .bloc_flex_v2
 {
@@ -61,6 +62,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background: transparent;
+    /* margin: 25px; */
 }
 
 .stage_text_v2
