@@ -11,6 +11,13 @@
   --big-line: #fff;
   --border_bloc_2 : #000;
   --darkmode:#fff;
+
+  --background-menu : #000000CC;
+  --background-menu-hover: #181818;
+  --color-menu : #fff;
+
+  --background-footer: #DDDDDD;
+  --color-footer: #2d2d2d;
 }
 /* Important que le dark theme soit apres le root car il va ecraser les valeurs précédentes  */
 .dark-theme{
@@ -18,14 +25,21 @@
   --background-block: #343333;
   --background-block-grid: #232323;
   --color-all: #FFF;
-  --color-all-hover: rgb(143, 143, 143);
+  --color-all-hover: rgb(163, 162, 162);
   --favorit-color: #49a1ff ;
-  --background-color-hover: #24232323;
+  --background-color-hover: #000;
   --color-strong: #49a1ff;
   --background-section-color: #000;
   --big-line: #fff;
   --border_bloc_2 : #000;
   --darkmode:#fff;
+
+  --background-menu : #000000CC;
+  --background-menu-hover: #181818;
+  --color-menu : #fff;
+
+  --background-footer: #DDDDDD;
+  --color-footer: #2d2d2d;
 }
 * {
   margin: 0;
@@ -100,7 +114,7 @@ strong {
 }
 .liens_externe:hover {
   background: var(--background-color-hover);
-  transition: ease-out 0.5s;
+  transition: ease-out 250ms;
   color: var(--color-all-hover);
 }
 
@@ -116,7 +130,7 @@ strong {
 }
 .liens_internes:hover {
   background: var(--background-color-hover);
-  transition: all 0.5s;
+  transition: all 250ms;
   color: var(--color-all-hover);
 }
 

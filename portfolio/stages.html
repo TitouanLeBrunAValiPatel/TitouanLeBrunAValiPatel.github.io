@@ -19,17 +19,16 @@
         <h2 class="encadre_text">Stage de première année</h2>
         <h3 class="stages_place encadre_text"><strong class="stages_strong_underline stages_place">Lieu</strong> : France Poultry Châteaulin</h3>
         <p class="stages_purpose"><strong class="stages_strong_underline stages_purpose">Objectif</strong> : Mettre à jour un site web interne et fusionner certaines BDD</p>
-        <h4 class="stages_plan"><strong class="stages_strong_underline stages_purpose">Plan</strong>:</h4>
-        <ul class="stages_plan">
-            <li class="li_bg_transparent"><p class="stages_each_step">Configurer le serveur de secours en machine <strong class="color_strong fz_em">Plug and Play</strong>  (Deux environnement)</p></li>
-            <li class="li_bg_transparent"><p class="stages_each_step"><strong class="color_strong fz_em">Préparation Bases</strong> pour la nouvelle version </p></li>
+        <h4 class="stages_plan"><strong class="stages_strong_underline stages_purpose">Missions</strong>:</h4>
+        <ol class="stages_plan">
+            <li class="li_bg_transparent"><p class="stages_each_step">Configurer le serveur de secours en machine <strong class="color_strong fz_em">Plug and Play</strong>  (Deux environnement) <strong class="color_strong fz_em">Préparation Bases</strong> pour la nouvelle version </p></li>
             <li class="li_bg_transparent"><p class="stages_each_step">Revoir les interfaces des vues <strong class="color_strong fz_em">Automates et Marqueuse</strong></p></li>
             <li class="li_bg_transparent"><p class="stages_each_step">Création <strong class="color_strong fz_em">interface version actuelle pour contrôle nouvelle version</strong></p></li>
             <li class="li_bg_transparent"><p class="stages_each_step"><strong class="color_strong fz_em">Fusion de l’application couvercle</strong> dans une nouvelle version</p></li>
-        </ul>
-        <p class="stages_purpose">Durant mes 2 périodes de stages j'ai pu valider un <strong class="color_strong stages_purpose"> ensemble de compétence</strong>pour mon BTS SIO</p>
+        </ol>
+        <!-- <p class="stages_purpose">Durant mes 2 périodes de stages j'ai pu valider un <strong class="color_strong stages_purpose"> ensemble de compétence</strong>pour mon BTS SIO</p> -->
         <div class="liens_div">
-            <a href="./pdf/Tableau_de_synthèse.xlsx" download class="liens_externe" target="_blank">Télécharger mon tableau de synthèse</a>
+            <a href="./pdf/Tableau_de_synthèse.pdf" download class="liens_externe" target="_blank">Voir mon tableau de synthèse</a>
         </div>
     </div>
 
@@ -52,12 +51,13 @@
                         (Deux environnement)
                     </h2>
                     <p class="stages_text_p  ">
-                        Sur <strong class="color_strong">Linux</strong>  j'ai mis en place un programme qui récupère la
+                        Création d'un <strong class="color_strong">script</strong> qui sauvegarde et restaure de la base de donnée Pesee sur <strong class="color_strong">Linux</strong>.  
+                        <!-- j'ai mis en place un programme qui récupère la
                         BDD de France Poultry avec les nouvelles données et ensuite je supprime la base de récupération
                         et la <strong class="color_strong">restaure avec les nouvelles données</strong> ce qui me 
                         permet de faire mes modifications en toute sécurité. J'ai fais des sauvegardes de mes 
                         modifications pour pouvoir les restaurer rapidement <strong class="color_strong">
-                        à l'aide d'un script</strong>.
+                        à l'aide d'un script</strong>. -->
                     </p>
                 </div>
 
@@ -95,7 +95,9 @@
                         <strong class="color_strong fz_em">Préparation Bases</strong> pour la nouvelle version 
                     </h2>
                     <p class="stages_text_p  ">
-                        Dans cette seconde étape j'ai <strong class="color_strong">créer 2 vues, des nouvelles tables, et 2 fonctions</strong> dans PostGresql.
+                        - Création de nouvelles tables, de 2 vues et 2 fonctions<strong class="color_strong">(pour simplifier le code PHP)</strong> sur <strong class="color_strong">PostGresql</strong> <br>
+                        - Insertion de données dans les tables. 
+                        <!-- Dans cette seconde étape j'ai <strong class="color_strong">créer 2 vues, des nouvelles tables, et 2 fonctions</strong> dans PostGresql.
                         les 2 vues que j'ai créé sont appelées Automate2 et Marqueuse2 qui correspondent aux 
                         <strong class="color_strong"> données les plus importantes</strong> de la production.
                         Dans l'ancienne application ces vues n'étaient pas clairement identifier, il fallait faire des 
@@ -103,7 +105,7 @@
                         pour <strong class="color_strong">simplifier le code Php.</strong> <br> par la suite, j'ai créer 2
                         fonctions dans PostGresql, kilo et freinte pour également alléger le code PHP. <br>
                         Et j'ai créer donc ces vues à partir de nouvelles tables que m'ont tuteur m'avaient demandé de créer 
-                        et d'y insérer des données déjà faites.
+                        et d'y insérer des données déjà faites. -->
                     </p>
                 </div>
 
@@ -145,7 +147,8 @@
                         Revoir les interfaces des vues <strong class="color_strong fz_em">Automates et Marqueuse</strong> 
                     </h2>
                     <p class="stages_text_p  ">
-                        Après avoir créer les 2 vues le but était de faire ressortir ses 
+                        <strong class="color_strong fz_em">- Réaliser des tests d’intégration et d’acceptation d’un service</strong>
+                        <!-- Après avoir créer les 2 vues le but était de faire ressortir ses 
                         <strong class="color_strong fz_em">données</strong> et qu'elles soient 
                         <strong class="color_strong fz_em">identiques</strong>  
                         à ce qu'il y a actuellement en production. <br>
@@ -155,7 +158,7 @@
                         <br>
                         <br>
                         Une fois ce travail fait il y a une partie vérification durant 1 à 3 jours pour vérifier 
-                        que même avec de nouvelles données il n'y a pas d'erreurs.
+                        que même avec de nouvelles données il n'y a pas d'erreurs. -->
                         <br>
                         <br>
                         <strong class="color_strong fz_em">Exemples d'erreurs : </strong>
@@ -163,7 +166,7 @@
                         - Une marque qui n’a pas été insérer dans la table Marque ce qui crée un trou dans le tableau <br>
                         - Un libelle message qui ne correspond pas au code de l’article <br>
                         - Un calibre qui est différent de celui initial. <br>
-                        - ...
+                        - ... 
                     </p>
                 </div>
 

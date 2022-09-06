@@ -24,5 +24,5 @@ function animationP(array, appearanceHeight, animationName) {
     
 }
 
-animationP(animation, 0.8, 'animation-left');
-animationP(animation2, 0.5, 'animation-f');
+animationP(animation, 0.9, 'animation-left');
+animationP(animation2, 0.8, 'animation-f');
