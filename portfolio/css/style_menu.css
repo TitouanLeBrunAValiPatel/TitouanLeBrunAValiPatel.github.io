@@ -208,7 +208,7 @@ h1, .h1_home{
         opacity: 1;
         transform: translateY(0);
         width: 100%;
-        background: var(--background-menu);
+        background: var(--background-menu-burger);
         display: flex;
         flex-direction: column;
         justify-content: space-around;
