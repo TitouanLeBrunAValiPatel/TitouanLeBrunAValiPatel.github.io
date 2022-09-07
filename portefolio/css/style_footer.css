@@ -1,10 +1,7 @@
-:root{
-    --background-footer: #858282;
-    --color-footer: #5d5d61;
-}
+
 .lien_contact{color: var(--color-footer);}
 .lien_contact:hover{
-    transition: all 0.5s;
+    transition: all 250ms;
     color: var(--color-footer);
 }
 

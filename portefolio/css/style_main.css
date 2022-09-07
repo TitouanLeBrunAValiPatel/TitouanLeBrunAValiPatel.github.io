@@ -11,6 +11,23 @@
   --big-line: #fff;
   --border_bloc_2 : #000;
   --darkmode:#fff;
+
+  --background-menu : #000000CC;
+  --background-menu-burger : #000000;
+
+  --background-menu-hover: #181818;
+  --color-menu : #fff;
+
+  --background-footer: #DDDDDD;
+  --color-footer: #2d2d2d;
+
+
+  /* font size  */
+
+  --fz-40: calc(10px + 2vw);
+  --fz-30: calc(5px + 3vw);
+  --fz-25: calc(12px + 1vw);
+  --fz-main: calc(10px + 1vw);
 }
 /* Important que le dark theme soit apres le root car il va ecraser les valeurs précédentes  */
 .dark-theme{
@@ -18,22 +35,30 @@
   --background-block: #343333;
   --background-block-grid: #232323;
   --color-all: #FFF;
-  --color-all-hover: rgb(143, 143, 143);
+  --color-all-hover: rgb(163, 162, 162);
   --favorit-color: #49a1ff ;
-  --background-color-hover: #24232323;
+  --background-color-hover: #000;
   --color-strong: #49a1ff;
   --background-section-color: #000;
   --big-line: #fff;
   --border_bloc_2 : #000;
   --darkmode:#fff;
+
+  --background-menu : #000000CC;
+  --background-menu-hover: #181818;
+  --color-menu : #fff;
+
+  --background-footer: #DDDDDD;
+  --color-footer: #2d2d2d;
 }
 * {
   margin: 0;
   padding: 0;
   background-color: var(--background-all);
   color: var(--color-all);
-  font-size: 22px;
+  font-size: var(--fz-main);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 .shadow{
   box-shadow: 10px 5px 5px var(--favorit-color);
@@ -52,7 +77,7 @@ strong {
 }
 
 .encadre_text {
-  font-size: 40px;
+  font-size: var(--fz-40);
   border: 1px solid var(--color-all);
   margin: 10px 35% 10px 35%;
   text-align: center;
@@ -82,7 +107,7 @@ strong {
 
 .h2_title_bloc {
   background: transparent;
-  font-size: 25px;
+  font-size: var(--fz-25);
   font-weight: 900;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -100,7 +125,7 @@ strong {
 }
 .liens_externe:hover {
   background: var(--background-color-hover);
-  transition: ease-out 0.5s;
+  transition: ease-out 250ms;
   color: var(--color-all-hover);
 }
 
@@ -116,7 +141,7 @@ strong {
 }
 .liens_internes:hover {
   background: var(--background-color-hover);
-  transition: all 0.5s;
+  transition: all 250ms;
   color: var(--color-all-hover);
 }
 

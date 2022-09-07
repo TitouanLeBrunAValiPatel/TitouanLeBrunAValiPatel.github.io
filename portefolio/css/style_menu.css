@@ -1,9 +1,4 @@
 /* Body */
-:root{
-    --background-menu : #000;
-    --background-menu-hover: #181818;
-    --color-menu : #fff;
-}
 
 /* header */
 
@@ -53,23 +48,23 @@ transform: translate(0, -50%);
 
 .lien_back_history:hover .trait_retour{ /* espace très important pour modifier le deuxieme element en fonction du premier*/
     background: var(--favorit-color);
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .lien_back_history:hover .trait_retour::after{ 
     background: var(--favorit-color);
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 .lien_back_history:hover .trait_retour::before{ 
     background: var(--favorit-color);
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /*Fin de fleche retour*/
 
 h1, .h1_home{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: var(--background-menu);
+    background: transparent;
     color: var(--color-menu);
     text-decoration: none;
 }
@@ -82,7 +77,7 @@ h1, .h1_home{
 }
 .liens{
     margin-right: 10px;
-    background-color: var(--background-menu);
+    background-color: transparent;
     text-decoration: none;
     color: var(--color-menu);    
 }
@@ -213,7 +208,7 @@ h1, .h1_home{
         opacity: 1;
         transform: translateY(0);
         width: 100%;
-        background: var(--background-menu);
+        background: var(--background-menu-burger);
         display: flex;
         flex-direction: column;
         justify-content: space-around;

@@ -1,7 +1,7 @@
 .projets_purpose{margin: 10px;}
 
 .projets_purpose{
-    font-size: 30px;
+    font-size: var(--fz-30);
     text-align: center;
     background: transparent;
 }

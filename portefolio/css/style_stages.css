@@ -1,8 +1,8 @@
 .bloc_stage{padding: 20px;}
 .stages_place, .stages_purpose{margin: 10px;}
-.stages_place{font-size: 40px;}
+.stages_place{font-size: var(--fz-40);}
 .stages_purpose{
-    font-size: 30px;
+    font-size:var(--fz-30);
     text-align: center;
     background: transparent;
 }
@@ -17,21 +17,18 @@
     background: transparent;
 }
 .stages_each_step{
-    font-size: 1.4em;
     margin: 10px;
     background: transparent;
 }
 /* fin div same_height_img */ 
 .stages_text_h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
+    font-size: var(--fz-25);
     margin-bottom: 1%;
     font-weight: bolder;
     text-align: center;
     background: transparent;
 }
-
-.fz_em{font-size: 1em;}
 
 .stages_text_p{
     padding-right: 3%;
