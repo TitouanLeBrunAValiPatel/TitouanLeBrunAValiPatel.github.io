@@ -204,12 +204,12 @@ strong {
 }
 .animation-f{
   opacity: 1;
-  transition: 1s linear;
+  transition: 500ms linear;
 }
 
 .animation-left{
   opacity: 1;
-  transition: 1s ease-in-out;
+  transition: 00ms linear;
   transform: translateX(0px);
 
 }

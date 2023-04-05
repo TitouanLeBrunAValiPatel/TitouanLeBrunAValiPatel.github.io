@@ -112,11 +112,11 @@ h1, .h1_home{
   height: 25px;
   border-radius: 50%;
   background: var(--darkmode);
-  transition:  500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition:  100ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .bool-translate{
   transform: translateX(28px);
-  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1)  ; 
+  transition: 100ms cubic-bezier(0.075, 0.82, 0.165, 1)  ; 
 }
 
 /* Fin du menu de navigation */
