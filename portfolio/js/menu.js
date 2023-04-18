@@ -15,6 +15,8 @@ let htmlMenu = `<header>
         <a href="./certifications.html" class="liens">Certifications</a> 
         <a href="./veille.html" class="liens">Veille</a> 
         <a href="./stages.html" class="liens">Stages</a>
+        <a href="./tableau.html" class="liens">Tableau de synthèse</a>
+
         <div class="mode_center"> 
             <label class="mode" for="darkmode">
                 <div class="bool"></div>
