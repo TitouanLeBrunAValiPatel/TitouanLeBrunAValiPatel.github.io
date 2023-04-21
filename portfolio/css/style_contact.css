@@ -1,3 +1,13 @@
+:root{
+
+    --color-title-contact:#000;
+
+    --border-title-contact:#000000;
+
+}
+
+
+
 .formulaire{
     margin: 10px;
 }
@@ -33,3 +43,18 @@
     background: rgb(139, 138, 138);
     transition: all 0.7s ;
 }
+.title-frame-contact {
+    font-size: var(--fz-40);
+    border: 1px solid var(--border-title-contact);
+    margin: 10px 35% 10px 35%;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: var(--color-title-contact);
+}
+@media screen and (max-width: 1200px) {
+
+    .title-frame-contact {
+        margin: 10px 20px 10px;
+      }
+  }

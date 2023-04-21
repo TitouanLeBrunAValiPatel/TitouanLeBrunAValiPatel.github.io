@@ -1,36 +1,39 @@
+:root{
 
-.lien_contact{color: var(--color-footer);}
-.lien_contact:hover{
+    
+/* color footer */
+
+--background-footer:#000000ee;
+
+--color-footer: #fff;
+--color-footer-hover:#bebebe;
+}
+.link-contact:hover{
     transition: all 250ms;
+    color: var(--color-footer-hover );
+}
+
+.footer p, .footer address, .footer p a{
+    background: transparent;
     color: var(--color-footer);
 }
 
 .footer{
-    background: transparent;
-    color: #272729;
-}
-
-footer{
     display: flex;
     justify-content: space-around;
-    background-color: var(--background-footer);
-    opacity: 0.8;
     text-align: center;
-    color: #272729;
-    position: relative; /* mettre l'élement en bas  avec bottom left right , absolute c'est par rapport à son parent qui est en relative (body ici)*/
-    bottom: 0;
-    right: 0;
-    left: 0;
+    background-color: var(--background-footer);
     padding: 10px;
     margin-top: 10px;
 }
 
-@media screen  and (max-width: 1200px){
 
-    footer{
+@media screen  and (max-width: 1400px){
+
+    .footer{
         display: flex;
         flex-direction: column; /*element a la suite des autres*/
     }
-    .google_maps{width: auto;/*pour que l'iframe ne deborde pas de son parent*/}
+    .google-maps{width: auto;/*pour que l'iframe ne deborde pas de son parent*/}
     
 }

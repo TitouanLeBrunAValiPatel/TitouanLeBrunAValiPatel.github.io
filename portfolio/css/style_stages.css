@@ -1,38 +1,48 @@
-.bloc_stage{padding: 20px;}
-.stages_place, .stages_purpose{margin: 10px;}
-.stages_place{font-size: var(--fz-40);}
-.stages_purpose{
-    font-size:var(--fz-30);
-    text-align: center;
-    background: transparent;
-}
+:root{
+    /* color intership */
 
-.stages_strong_underline{
-    text-decoration: underline;
-    margin-right: 1%;
-    background: transparent;
+--background-card-intership:#fff;
+--background-link-intership:#000;
+--background-link-intership-hover:#000;
+
+--color-card-strong-intership:#5598e4;
+--color-card-intership:#000;
+--color-card-title-intership:#000;
+--color-plan-step-strong-intership:#000;
+--color-plan-step-intership:#000;
+--color-title-intership:#000;
+--color-place-strong-intership:#000;
+--color-place-intership:#000;
+--color-objective-strong-intership:#000;
+--color-objective-intership:#000;
+--color-plan-strong-intership:#000;
+--color-plan-intership:#000;
+--color-link-intership:#edebeb;
+--color-link-intership-hover:#bebebe;
+
+--border-card-intership:#000;
+--border-title-intership:#000;
+--border-link-intership:#fff;
+--border-link-intership-hover:#fff;
+--border-top-all-link:#000;
+
 }
-.stages_plan{
-    margin: 5%;
-    background: transparent;
-}
-.stages_each_step{
-    margin: 10px;
-    background: transparent;
-}
-/* fin div same_height_img */ 
-.stages_text_h2{
+.intership-frame{padding: 20px;}
+.big-frame-internship{overflow: hidden;}
+.title-card-intership{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: var(--fz-25);
     margin-bottom: 1%;
     font-weight: bolder;
     text-align: center;
     background: transparent;
+    color: var(--color-card-title-intership);
 }
 
-.stages_text_p{
+.describe-card-intership{
     padding-right: 3%;
     background: transparent;
+    color: var(--color-card-intership);
 }
 .scroll{
     overflow: scroll;
@@ -40,20 +50,19 @@
 }
 .break{overflow-wrap: break-word;}
 
-.li_bg_transparent{background: transparent;}
 
-.stages_bloc_v2
+.frame-intership
 {
-    max-width: 100%;
-    border: 1px solid var(--favorit-color);
+    width: 80%;
+    border: 1px solid var(--border-card-intership);
     border-radius: 7px;
-    background: var(--background-block);
+    background: var(--background-card-intership);
     padding: 5px;
     margin: auto;
     height: auto;
     max-width: 1000px;
 }
-.bloc_flex_v2
+.frame-flex-intership
 {
     display: flex;
     flex-wrap: wrap;
@@ -62,15 +71,127 @@
     /* margin: 25px; */
 }
 
-.stage_text_v2
+.describe-block-intership   
 {
     max-width: 50%;
     padding: 5px;
     background: transparent;
 }
 
+
+
+
+.all-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid var(--border-top-all-link);
+    background: transparent;
+  }
+
+
+.intership-step{
+    margin: 10px;
+    background: transparent;
+    color: var(--color-plan-intership);
+}
+.step-strong-intership {
+    background: transparent;
+    color: var(--color-plan-step-strong-intership);
+}
+
+.title-frame-intership {
+    font-size: var(--fz-40);
+    border: 1px solid var(--border-title-intership);
+    margin: 10px 35% 10px 35%;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: var(--color-title-intership);
+}
+
+.intership-strong-underline-place{
+
+    text-decoration: underline;
+    margin-right: 1%;
+    background: transparent;
+    color: var(--color-place-strong-intership);
+}
+.intership-place{
+    font-size: var(--fz-40);
+}
+.frame-place{
+    font-size: var(--fz-40);
+    border: 1px solid var(--border-title-intership);
+    margin: 10px 35% 10px 35%;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: var(--color-place-intership);
+}
+
+.intership-strong-underline-objective{
+    text-decoration: underline;
+    margin-right: 1%;
+    background: transparent;
+    color: var(--color-objective-strong-intership);
+}
+.intership-objective{
+    font-size:var(--fz-30);
+    text-align: center;
+    background: transparent;
+    margin: 10px;
+    color: var(--color-objective-intership);
+}
+.intership-plan{
+    font-size:var(--fz-30);
+    margin: 5%;
+    background: transparent;
+    color: var(--color-plan-intership);
+}
+
+.intership-strong-underline-plan{
+    text-decoration: underline;
+    margin-right: 1%;
+    background: transparent;
+    color: var(--color-plan-strong-intership);
+}
+
+.external-link-intership {
+    display: inline-block; /*pour se comporter comme des bloc au lieu des inlines*/
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--background-link-intership);
+    padding: 10px;
+    border: 1px solid var(--border-link-intership);
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--color-link-intership);
+}
+.external-link-intership:hover {
+    background: var(--background-link-intership-hover);
+    transition: ease-out 250ms;
+    color: var(--color-link-intership-hover);
+    border: 1px solid var(--border-link-intership-hover); 
+}
+
+.strong-intership {
+    background: transparent;
+    color: var(--color-card-strong-intership);
+}
+
+.img-frame-little-card-intership{background: transparent;}
+
+.img-frame-intership{
+    max-height: 50vh;
+    max-width: 100%;
+    background: transparent;
+}
+
 @media screen and (max-width:900px)
 {
-    .stage_text_v2{max-width: 100%;}
+    .describe-block-intership{max-width: 100%;}
+    .title-frame-intership, .frame-place{margin: 10px 20px 10px;}
+
 }
 
