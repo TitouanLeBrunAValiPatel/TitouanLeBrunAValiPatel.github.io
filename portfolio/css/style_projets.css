@@ -75,6 +75,7 @@
     border: 1px solid var(--border-big-card-project);
     border-radius: 7px;
     margin: 0 5%;
+    overflow: hidden;
 }
 
 .describe-little-card-project {
