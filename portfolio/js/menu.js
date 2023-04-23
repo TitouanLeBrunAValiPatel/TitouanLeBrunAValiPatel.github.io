@@ -44,7 +44,6 @@ header2.insertAdjacentHTML('afterbegin', htmlMenu);
 const hamburger = document.getElementById('hamburger')
 const lines = document.querySelector('.line-menu-burger')
 const navBar = document.querySelector('.navigation-menu');
-console.log(navBar);
 hamburger.addEventListener('click', () => {
     lines.classList.toggle('active')
     navBar.classList.toggle('active')
@@ -57,7 +56,8 @@ let lastScrollTop = 0;
 let nav = document.getElementsByTagName("header");
 window.addEventListener("scroll", function() { 
     let scrollTop = this.window.scrollY
-    if(!navBar.classList.contains('active'))
+    console.log(this.screen.height);
+    if(!navBar.classList.contains('active') )
     {
         if (lastScrollTop >= scrollTop){
             nav[0].style.position = "fixed";
