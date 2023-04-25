@@ -1,18 +1,18 @@
 :root {
     /* color menu */
-    --arrow-left: #fff;
+    --arrow-left: #e2e2e2;
 
-    --background-menu: #000000ee;
+    --background-menu: #1f1f1f;
     --background-menu-link-hover: #181818;
     --background-bool-mode: #cdc8c8;
 
-    --color-bool: #fff;
-    --color-menu-title: #fff;
-    --color-menu-link: #fff;
+    --color-bool: #e2e2e2;
+    --color-menu-title: #e2e2e2;
+    --color-menu-link: #e2e2e2;
     --color-menu-link-hover:#bebebe;
-    --color-menu-burger: #fff;
+    --color-menu-burger: #e2e2e2;
 
-    --border-bool-mode: #fff;
+    --border-bool-mode: #e2e2e2;
 }
 
 /* Body */

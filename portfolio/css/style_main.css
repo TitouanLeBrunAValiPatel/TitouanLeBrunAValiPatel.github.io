@@ -10,7 +10,7 @@
 .dark-theme{
 
 /* color menu */
-  --arrow-left: #fff;
+  /* --arrow-left: #fff;
 
   --background-menu:#000000ee;
   --background-menu-link-hover: #181818;
@@ -21,17 +21,17 @@
   --color-menu-link:#fff;
   --color-menu-burger:#fff;
 
-  --border-bool-mode:#fff;
+  --border-bool-mode:#fff; */
 
 /* color footer */
 
-  --background-footer:#272729;
+  /* --background-footer:#272729;
 
   --color-footer: #8f8d8d;
-  --color-footer-hover:#fff;
+  --color-footer-hover:#fff; */
 /* color projects */
 
---background-big-card-project:transparent;
+/* --background-big-card-project:transparent;
 --background-little-card-project:#6e3131;
 --background-little-card-link-project:#fff;
 --background-little-card-link-project-hover:#bd0d0d;
@@ -48,12 +48,12 @@
 --border-big-card-project:#8100f2;
 --border-little-card-project:#9735d9;
 --border-little-card-link-project:#4c1cbc;
---border-little-card-link-project-hover:rgb(46, 222, 201);
+--border-little-card-link-project-hover:rgb(46, 222, 201); */
 
 
 /* color certifications */
 
---background-big-card-certification:#000;
+/* --background-big-card-certification:#000;
 --background-little-card-certification:#aaa;
 --background-little-card-link-certification:#a32f2f;
 --background-little-card-link-certification-hover:#140909;
@@ -68,11 +68,11 @@
 --border-little-card-certification:blue;
 --border-card-title-certification:#40e812;
 --border-little-card-link-certification:#b7b3c1;
---border-little-card-link-certification-hover:#ce4646;
+--border-little-card-link-certification-hover:#ce4646; */
 
 /* color monitoring */
 
---background-little-card-monitoring:#6e3131;
+/* --background-little-card-monitoring:#6e3131;
 --background-little-card-link-monitoring:#fff;
 --background-little-card-link-monitoring-hover:#bd0d0d;
 
@@ -84,11 +84,11 @@
 --border-card-title-monitoring:#160f0f;
 --border-little-card-monitoring:#000;
 --border-little-card-link-monitoring:#070707;
---border-little-card-link-monitoring-hover:#4040cc;
+--border-little-card-link-monitoring-hover:#4040cc; */
 
 /* color intership */
 
---background-card-intership:#1b1bbc;
+/* --background-card-intership:#1b1bbc;
 --background-link-intership:#fff;
 --background-link-intership-hover:#bd0d0d;
 
@@ -111,19 +111,19 @@
 --border-title-intership:#e70e0e;
 --border-link-intership:#e70e0e;
 --border-link-intership-hover:#1111be;
---border-top-all-link:#d51f1f;
+--border-top-all-link:#d51f1f; */
 
 
 /* color table */
 
---background-table-case-hover:rgb(7, 121, 95);
+/* --background-table-case-hover:rgb(7, 121, 95);
 --background-title-table:transparent;
 
 --color-title-table:#1e09be;
 
 --border-table:#000;
 --border-table-case:rgb(7, 121, 95);
---border-title-table:#cdcdcd;
+--border-title-table:#cdcdcd; */
 
 
 }

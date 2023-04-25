@@ -3,10 +3,10 @@
     
 /* color footer */
 
---background-footer:#000000ee;
+--background-footer:#1f1f1f;
 
---color-footer: #fff;
---color-footer-hover:#bebebe;
+--color-footer: #e2e2e2;
+--color-footer-hover:#f3f3f3;
 }
 .link-contact:hover{
     transition: all 250ms;

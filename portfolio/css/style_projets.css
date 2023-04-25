@@ -2,24 +2,24 @@
     
 /* color projects */
 
---background-big-card-project:#000;
---background-little-card-project:#ffffff;
---background-little-card-link-project:#000;
---background-little-card-link-project-hover:#000;
+--background-big-card-project:#1f1f1f;
+--background-little-card-project:#e2e2e2;
+--background-little-card-link-project:#1f1f1f;
+--background-little-card-link-project-hover:#1f1f1f;
 
 
---color-card-title-project:#000;
---color-card-objective-project:#000;
---color-card-strong-objective-project:#000;
---color-little-card-project:#000;
---color-little-card-link-project:#fff;
---color-little-card-link-project-hover:#bebebe;
+--color-card-title-project:#1f1f1f;
+--color-card-objective-project:#1f1f1f;
+--color-card-strong-objective-project:#1f1f1f;
+--color-little-card-project:#1f1f1f;
+--color-little-card-link-project:#e2e2e2;
+--color-little-card-link-project-hover:#f3f3f3;
 
---border-card-title-project:#000;
---border-big-card-project:#000;
---border-little-card-project:#fff;
---border-little-card-link-project:#fff;
---border-little-card-link-project-hover:#fff;
+--border-card-title-project:#1f1f1f;
+--border-big-card-project:#1f1f1f;
+--border-little-card-project:#e2e2e2;
+--border-little-card-link-project:#e2e2e2;
+--border-little-card-link-project-hover:#e2e2e2;
 
 
 }

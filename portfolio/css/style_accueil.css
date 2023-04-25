@@ -1,50 +1,50 @@
 :root{
     /* color shadow  */
---color-shadow-card-cv: #b6b6b6b9;
---color-shadow-card: #cbc7c7bd;
+--color-shadow-card-cv: #cdcdcdb9;
+--color-shadow-card: #979696bd;
     /* color home */ 
 
---background-card-cv:#fff;
---background-card-menu:#000;
+--background-card-cv:#e2e2e2;
+--background-card-menu:#1f1f1f;
 --background-card-link:#cdc8c8;
---background-card-link-hover:#000;
---background-card-link-cv-hover:#fff;
+--background-card-link-hover:#1f1f1f;
+--background-card-link-cv-hover:#e2e2e2;
 
---color-card-cv:#000;
---color-card-title:#fff;
---color-card-text:#fff;
---color-card-link:#fff;
---color-card-link-hover:#e3e3e3;
---color-card-link-cv:#000;
+--color-card-cv:#1f1f1f;
+--color-card-title:#e2e2e2;
+--color-card-text:#e2e2e2;
+--color-card-link:#e2e2e2;
+--color-card-link-hover:#f3f3f3;
+--color-card-link-cv:#1f1f1f;
 --color-card-link-cv-hover:#545252;
 
---border-card-title:#fff;
---border-card:#fff;
---border-card-cv:#000;
---border-card-link:#fff;
+--border-card-title:#e2e2e2;
+--border-card:#e2e2e2;
+--border-card-cv:#1f1f1f;
+--border-card-link:#e2e2e2;
 --border-card-link-cv:#111;
 }
 .dark-theme{
     /* color home */ 
 
-  --background-card-cv:#c92121;
+  /* --background-card-cv:#c92121;
   --background-card-menu:#ffdab9;
   --background-card-link:#cdc8c8;
-  --background-card-link-hover:#fff;
-  --background-card-link-cv-hover:#fff;
+  --background-card-link-hover:#e2e2e2;
+  --background-card-link-cv-hover:#e2e2e2;
 
-  --color-card-cv:#000;
-  --color-card-title:#000;
-  --color-card-text:#000;
-  --color-card-link:#000;
+  --color-card-cv:#1f1f1f;
+  --color-card-title:#1f1f1f;
+  --color-card-text:#1f1f1f;
+  --color-card-link:#1f1f1f;
   --color-card-link-hover:#aaa;
-  --color-card-link-cv:#000;
+  --color-card-link-cv:#1f1f1f;
   --color-card-link-cv-hover:#aaa;
 
-  --border-card-title:#000;
+  --border-card-title:#1f1f1f;
   --border-card:#cdc8c8;
   --border-card-link:#cdc8c8;
-  --border-card-link-cv:#111;
+  --border-card-link-cv:#111; */
 }
 .border{
     border: 1px solid var(--border-card-cv);

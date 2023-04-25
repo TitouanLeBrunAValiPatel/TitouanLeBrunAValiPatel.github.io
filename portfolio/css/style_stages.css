@@ -1,30 +1,30 @@
 :root{
     /* color intership */
 
---background-card-intership:#fff;
---background-link-intership:#000;
---background-link-intership-hover:#000;
+--background-card-intership:#e2e2e2;
+--background-link-intership:#1f1f1f;
+--background-link-intership-hover:#1f1f1f;
 
 --color-card-strong-intership:#5598e4;
---color-card-intership:#000;
---color-card-title-intership:#000;
---color-plan-step-strong-intership:#000;
---color-plan-step-intership:#000;
---color-title-intership:#000;
---color-place-strong-intership:#000;
---color-place-intership:#000;
---color-objective-strong-intership:#000;
---color-objective-intership:#000;
---color-plan-strong-intership:#000;
---color-plan-intership:#000;
---color-link-intership:#edebeb;
---color-link-intership-hover:#bebebe;
+--color-card-intership:#1f1f1f;
+--color-card-title-intership:#1f1f1f;
+--color-plan-step-strong-intership:#1f1f1f;
+--color-plan-step-intership:#1f1f1f;
+--color-title-intership:#1f1f1f;
+--color-place-strong-intership:#1f1f1f;
+--color-place-intership:#1f1f1f;
+--color-objective-strong-intership:#1f1f1f;
+--color-objective-intership:#1f1f1f;
+--color-plan-strong-intership:#1f1f1f;
+--color-plan-intership:#1f1f1f;
+--color-link-intership:#e2e2e2;
+--color-link-intership-hover:#f3f3f3;
 
---border-card-intership:#000;
---border-title-intership:#000;
---border-link-intership:#fff;
---border-link-intership-hover:#fff;
---border-top-all-link:#000;
+--border-card-intership:#1f1f1f;
+--border-title-intership:#1f1f1f;
+--border-link-intership:#e2e2e2;
+--border-link-intership-hover:#e2e2e2;
+--border-top-all-link:#1f1f1f;
 
 }
 .intership-frame{padding: 20px;}
@@ -60,7 +60,7 @@
     padding: 5px;
     margin: auto;
     height: auto;
-    max-width: 1000px;
+    max-width: 11f1f1fpx;
 }
 .frame-flex-intership
 {

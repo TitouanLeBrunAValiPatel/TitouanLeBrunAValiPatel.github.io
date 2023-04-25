@@ -1,20 +1,20 @@
 :root{
     /* color monitoring */
 
---background-little-card-monitoring:#000;
---background-little-card-link-monitoring:#000;
---background-little-card-link-monitoring-hover:#000;
+--background-little-card-monitoring:#1f1f1f;
+--background-little-card-link-monitoring:#1f1f1f;
+--background-little-card-link-monitoring-hover:#1f1f1f;
 
---color-card-title-monitoring:#000;
---color-little-card-title-monitoring:#fff;
---color-little-card-monitoring:#fff;
---color-little-card-link-monitoring:#fff;
---color-little-card-link-monitoring-hover:#bebebe;
+--color-card-title-monitoring:#1f1f1f;
+--color-little-card-title-monitoring:#e2e2e2;
+--color-little-card-monitoring:#e2e2e2;
+--color-little-card-link-monitoring:#e2e2e2;
+--color-little-card-link-monitoring-hover:#f3f3f3;
 
---border-card-title-monitoring:#000;
---border-little-card-monitoring:#fff;
---border-little-card-link-monitoring:#fff;
---border-little-card-link-monitoring-hover:#fff;
+--border-card-title-monitoring:#1f1f1f;
+--border-little-card-monitoring:#e2e2e2;
+--border-little-card-link-monitoring:#e2e2e2;
+--border-little-card-link-monitoring-hover:#e2e2e2;
 }
 
 
