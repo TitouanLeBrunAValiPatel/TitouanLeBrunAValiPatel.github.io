@@ -76,6 +76,7 @@
     border-radius: 7px;
     margin: 0 5%;
     overflow: hidden;
+    justify-content: center;
 }
 
 .describe-little-card-project {

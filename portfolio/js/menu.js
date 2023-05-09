@@ -3,13 +3,6 @@ let header2 = document.body;
 let htmlMenu = ` 
 <header>
     <div id="main-item-menu">
-
-        <a class="back-history-link" onclick="history.back()">
-            <div class="arrow">
-                <div class="left-arrow"></div>
-                <div class="line-arrow"></div>
-            </div>
-        </a>
         <h1><a class="title-home" href="./index.html">Titouan Le Brun</a></h1>
         <div id="h">
 
