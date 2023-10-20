@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://scoop-test.yogoko.fr/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="http://scoop-test.yogoko.fr/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://scoop-test.yogoko.fr/images/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="http://scoop-test.yogoko.fr/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="http://scoop-test.yogoko.fr/images/favicon.ico">
+
+    <link rel="manifest" href="http://scoop-test.yogoko.fr/images/manifest.json">
+    <meta name="csrf-token" content="WaSIyj331IbqZUCaMkZEN2uK420BohQ9mBSwrylX">
+    <meta name="msapplication-config" content="http://scoop-test.yogoko.fr/images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="http://scoop-test.yogoko.fr/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/jquery.bootgrid.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/tagmanager.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/mktree.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/vis.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/jquery.gridster.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/leaflet.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/MarkerCluster.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/MarkerCluster.Default.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/L.Control.Locate.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/leaflet.awesome-markers.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/select2.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/query-builder.default.min.css" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/styles.css?ver=20191124" rel="stylesheet" type="text/css">
+    <link href="http://scoop-test.yogoko.fr/css/light.css?ver=632417642" rel="stylesheet" type="text/css">
+
+    <script src="./includes/actionGroup.js" defer></script>
+    <script src="./includes/popup_function.js" defer></script>
+    <script src="./includes/version_config.js" defer></script>
+    <script src="./function/list-device.js" defer></script>
+    <script src="./function/templates-devices/checkbox-select.js" defer></script>
+    <script src="./function/refresh-config-version.js" defer></script>
+    
+    <script src="./function/group-devices.js" defer></script>
+    <script src="./function/update-template.js" defer></script>
+    <script src="./includes/include_templates.js" defer></script>
+    <script src="./function/infos.js" defer></script>
+    <script src="./function/buttonAction.js" defer></script>
+
+
+
+    <script src="http://scoop-test.yogoko.fr/js/polyfill.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/jquery.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/bootstrap.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/bootstrap-switch.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/hogan-2.0.0.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/jquery.cycle2.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/moment.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/typeahead.bundle.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/jquery-ui.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/tagmanager.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/mktree.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/jquery.bootgrid.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/handlebars.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/pace.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/qrcode.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/jquery.lazyload.min.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/lazyload.js"></script>
+    <script src="http://scoop-test.yogoko.fr/js/select2.min.js"></script>
+
+    <script src="./includes/nav.js" defer></script>
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        var ajax_url = "http://scoop-test.yogoko.fr/ajax";
+    </script>
+    <script src="http://scoop-test.yogoko.fr/js/librenms.js?ver=20191025"></script>
+    <script type="text/javascript">
+        // function popUp(URL)
+        // {
+        //     day = new Date();
+        //     id = day.getTime();
+        //     eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=550,height=600');");
+        // }
+    </script>
+    <script type="text/javascript" src="http://scoop-test.yogoko.fr/js/overlib_mini.js"></script>
+    <script type="text/javascript" src="http://scoop-test.yogoko.fr/js/toastr.min.js"></script>
+    <script type="text/javascript" src="http://scoop-test.yogoko.fr/js/boot.js"></script>
+    <link rel="stylesheet" href="css/data-col.css">
+    <style id="gridster-stylesheet" type="text/css">
+
+        .custom-checkbox{
+            width: 1.5em;
+            height: 1.5em;
+        }
+    </style>
+
+</head>
+
+<body class="  pace-done">
+    <div id="popup" class="popup">
+        <span id="popup-text" class="popup-text">sdffgsdgfsdg</span>
+      </div> 
+    <br>
+
+    <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body alert-danger"><img src="http://scoop-test.yogoko.fr/images/logos/yogoko.png" title="images/os/yogoko" class="device-icon-header pull-left">
+                        <div class="pull-left" style="margin-top: 5px;">
+                            <span style="font-size: 20px;"><a class="list-device-down" href="#">Gestion des configurations des appareils</a></span>       
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="panel panel-default panel-condensed" id="configFormHeader">
+                    <div class="panel-heading">
+                        <div class="row" style="padding: 0px 10px 0px 10px;">
+
+                            <div class="col-md-4" style="font-size: 20px;">Templates :
+                                <select id="selectVersion">
+
+
+                                </select>
+                                    <br><br><span id="versionText" style="font-size: 20px;">Template selectionné : </span>
+                            </div>
+                            <div class="col-md-4">
+                                
+                                <!-- <button type="button" onclick="location.href = 'index.html'" class="btn btn-warning">Annuler</button> -->
+                                <button type="submit" name="btn-update-config-var" id="btnUpdateConfiguration"
+                                class="btn btn-success">Enregistrer</button>
+                            </div>
+                            <div class="col-md-4">
+                                <div class='col-md-4'>
+                                    <button type='button' class='btn btn-default' id='btnDowngrade' >Affichage de versions supplémentaires<br />(nécessite un retour usine)</button>
+                                </div>
+                            </div>
+                            
+
+                                
+                        </div>
+                    
+                        
+                    </div>
+                    <!-- <div class="panel-heading">
+                        <div class="row" style="padding: 0px 10px 0px 10px;">
+
+                            <div class="col-md-4" style="font-size: 20px;">Filtrer par groupe :
+                                <select id="selectGroup">
+
+
+                                </select>
+                            </div>
+                            
+                            <button type="button" onclick="updateRowVisibility('')" class="btn btn-info">Effacer le filtre</button>
+                        </div>
+                    </div> -->
+                    <div id="actionGroup">
+
+                    </div>
+                    <div class="row"></div>
+                    <div class="table-responsive">
+                        <table id="devices" class="table table-hover table-condensed table-striped bootgrid-table"
+                            aria-busy="false">
+                            <thead>
+                                <tr>
+                                    <th data-column-id="status" class="text-left" style="width:7px;"><a
+                                            href="javascript:void(0);" class="column-header-anchor sortable"><span
+                                                class="text">&nbsp;</span><span class="icon glyphicon "></span></a></th>
+                                    <th data-column-id="icon" class="text-left" style="width:70px;"><a
+                                            href="javascript:void(0);" class="column-header-anchor sortable"><span
+                                                class="text">Vendor</span><span class="icon glyphicon "></span></a></th>
+                                    <th data-column-id="hostname" class="text-left" ><a
+                                            href="javascript:void(0);" class="column-header-anchor sortable"><span
+                                                class="text">Appareils</span><span
+                                                class="icon glyphicon glyphicon-chevron-up"></span></a></th>
+                                    <th data-column-id="last_polled" class="text-left" ><a
+                                            href="javascript:void(0);" class="column-header-anchor sortable"><span
+                                                class="text">Dernier sondage</span><span
+                                                class="icon glyphicon "></span></a>
+                                    </th>
+                                    <th data-column-id="os" class="text-left" ><a href="javascript:void(0);"
+                                            class="column-header-anchor sortable"><span class="text">Template
+                                                configuration</span><span class="icon glyphicon "></span></a></th>
+                                    <th data-column-id="os" class="text-left" ><a href="javascript:void(0);"
+                                            class="column-header-anchor sortable"><span class="text">Groupe de
+                                                périphérique</span><span class="icon glyphicon "></span></a></th>
+                                    <th data-column-id="location" class="text-left" ><a
+                                            href="javascript:void(0);" class="column-header-anchor sortable"><span
+                                                class="text">Emplacement</span><span class="icon glyphicon "></span></a>
+                                    </th>
+                                    <th data-column-id="location" class="text-left " style="white-space: nowrap;"><a
+                                            href="javascript:void(0);" class="column-header-anchor sortable"><span
+                                                class="text">Selection <input id="selectAllCheckbox" type="checkbox"></span><span
+                                                class="icon glyphicon "></span></a></th>
+                                    <th data-column-id="actions" class="text-left device-table-header-actions"
+                                        style="width:90px;"><a href="javascript:void(0);"
+                                            class="column-header-anchor "><span class="text">Actions</span><span
+                                                class="icon glyphicon "></span></a></th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody id="tbodyListDevices">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                      
+                    <div id="devices-footer" class="bootgrid-footer container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="pagination">
+                                    <li class="first disabled" aria-disabled="true"><a data-page="first"
+                                            class="button">«</a></li>
+                                    <li class="prev disabled" aria-disabled="true"><a data-page="prev"
+                                            class="button">&lt;</a></li>
+                                    <li class="page-1 active" aria-disabled="false" aria-selected="true"><a
+                                            data-page="1" class="button">1</a></li>
+                                    <li class="next disabled" aria-disabled="true"><a data-page="next"
+                                            class="button">&gt;</a></li>
+                                    <li class="last disabled" aria-disabled="true"><a data-page="last"
+                                            class="button">»</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 infoBar">
+                                <div class="infos"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+</body>
+
+<div class="modal fade" id="downgradeWarning" tabindex="-1" role="dialog" aria-labelledby="downgradeWarningLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title danger" id="myModalLabel">Avertissement</h4>
+            </div>
+            <div class="modal-body">
+                Pour rétrograder la version du boitier :
+                <ol>
+                    <li>Enregistrer la version antérieure ;</li>
+                    <li>Effectuer un retour usine immédiatement.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-warning" onclick="confirmDowngrade()">Accéder aux
+                    versions antérieures</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateConfiguration" tabindex="-1" role="dialog" aria-labelledby="updateConfigurationWarningLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title danger" id="myModalLabel">Avertissement : Modification de la configuration des appareils</h4>
+            </div>
+            <div class="modal-body" id="updateConfigurationLabel">
+                L'enregistrement du template : [nom du template] <br>
+                Entraîne la modification de la configurations des appareils [Liste des appareils selectionnés]:
+
+                <ol>
+                    <li>Les appareils dont les valeurs sont surchargées restent surchargés.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-warning" onclick="editLines()">Modifier la configuration des appareils</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

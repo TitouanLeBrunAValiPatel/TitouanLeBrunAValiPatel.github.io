@@ -1,0 +1,385 @@
+{
+	"caservice" :{
+		"start" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du CA service, ce dernier assure les fonctions relatives aux messages CAM (Boolean)",
+			"defaultValue" : "true"
+		},
+		"mitigationcontrol" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du mécanisme d’atténuation de puissance sur les messages CAM ",
+			"defaultValue" : "true"
+		}
+	},
+
+	"denservice" : {
+		"start" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du DEN service, ce dernier assure les fonctions relatives aux messages DENM (Boolean)",
+			"defaultValue" : "true"
+		}
+	},
+
+	"pvt" : {
+		"leapseconds" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Valeur par défaut des secondes de décalage depuis 01/01/2004 avant détection du signal GPS  (Integer)",
+			"defaultValue" : 5
+		},
+		"ntpaddress" : {
+			"type" : "string",
+			"description" : "Adresse du serveur de temps NTP français (ipv4, ipv6, nom de domaine) ",
+			"defaultValue" : "0.pool.ntp.org"
+		}
+	},
+
+	"security" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation de la sécurité C-ITS (Boolean)",
+			"defaultValue" : "false"
+		}
+	},
+
+	"radiomanagement" : {
+		"mitigation_enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du DSRC-G5 mitigation service (Boolean)",
+			"defaultValue" : "true"
+		},
+		"power_red" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Réduction de la puissance lors de l’activation de la mitigation DSRC-G5 (Integer : dBm)",
+			"defaultValue" : 23
+		}
+	},
+
+	"pkiservice" : {
+		"dc_address" : {
+			"type" : "string",
+			"description" : "URL du serveur PKI (Url dc)",
+			"defaultValue" : "0.fr-dc.l0.c-its-pki.eu"
+		},
+		"ea_address" : {
+			"type" : "string",
+			"description" : "URL du serveur PKI (Url ea)",
+			"defaultValue" : "0.fr-ea-roads.l0.c-its-pki.eu"
+		},
+		"aa_address" : {
+			"type" : "string",
+			"description" : "URL du serveur PKI (Url aa)",
+			"defaultValue" : "0.fr-aa-1.l0.c-its-pki.eu"
+		}
+	},
+	"its" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du module ITS",
+			"defaultValue" : "true"
+		}
+	},	
+	"itsnet" : {
+		"hoplimit" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Limite du nombre de hop  (Integer)",
+			"defaultValue" : 10
+		}
+	},
+
+	"scooputic" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation de l’application SCOOP UTIC (Boolean)",
+			"defaultValue" : "true"
+		},
+		"loglevel" : {
+			"type" : "string",
+			"description" : "Niveau de  log de l’application SCOOP UTIC  (nolog (moins détaillé),error,warning,notice,info,debug(plus détaillé) )",
+			"defaultValue" : "error"
+		}
+	},
+
+	"tlogupload" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation la remontée TLogs (Boolean)",
+			"defaultValue" : "true"
+		},
+		"server" : {
+			"type" : "string",
+			"description" : "Adresse du serveur Tlog et Ulog (ipv4, ipv6, nom de domaine)",
+			"defaultValue" : "192.168.35.46"
+		}
+	},
+
+	"scoopconfig" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du téléchargement des fichiers scoop.conf et vehicule.conf (Boolean)",
+			"defaultValue" : "true"
+		},
+		"server" : {
+			"type" : "string",
+			"regex" : "",
+			"description" : "Adresse du  serveur de configuration pour télécharger les fichiers scoop.conf et vehicule.conf (Url)",
+			"defaultValue" : "scoop-valyogoko.diro.c-its.fr"
+		}
+	},
+
+	"v2x0" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation de la canal de contrôle radio G5 CCH (control channel) (Boolean)",
+			"defaultValue" : "true"
+		},
+		"frequency" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Fréquence de la canal de contrôle radio G5 CCH (control channel) (Integer : MHz)",
+			"defaultValue" : 5900
+		},
+		"txpower" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Puissance d’émission de la canal de contrôle radio G5 CCH (control channel) (Integer : dB)",
+			"defaultValue" : 33
+		}
+	},
+
+	"v2x1" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation de la canal de service radio G5 SCH1 (Service channel)(Boolean)",
+			"defaultValue" : "true"
+		},
+		"frequency" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Fréquence de la canal de service radio G5 SCH1 (Service channel)(Integer : MHz)",
+			"defaultValue" : 5880
+		},
+		"txpower" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Puissance d’émission de la canal de service radio G5 SCH1 (Service channel) (Integer : dB)",
+			"defaultValue" : 33
+		}
+	},
+
+	"wifi" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation de l’interface WiFi (Boolean)",
+			"defaultValue" : "true"
+		},
+		"ssid" : {
+			"type" : "string",
+			"regex" : "",
+			"description" : "Nom (SSID) du réseau WiFi  (String : identifiant)",
+			"defaultValue" : ""
+		},
+		"passphrase" : {
+			"type" : "string",
+			"regex" : "",
+			"description" : "Mot de passe du réseau WiFi",
+			"defaultValue" : ""
+		}
+	},
+
+	"wwan" : {
+		"apn" : {
+			"type" : "string",
+			"regex" : "",
+			"description" : "APN de l’opérateur cellulaire  (String)",
+			"defaultValue" : ""
+		},
+		"pincode" : {
+			"type" : "integer",
+			"regex" : "",
+			"description" : "Code PIN de la SIM  (Integer)",
+			"defaultValue" : ""
+		}
+	},
+
+	"snmp" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du protocole SNMP (Boolean)",
+			"defaultValue" : "true"
+		},
+		"password" : {
+			"type" : "string",
+			"regex" : "",
+			"description" : "Mot de passe SNMP",
+			"defaultValue" : ""
+		}
+	},
+
+	"syslog" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation de la transmission des journaux système (Boolean)",
+			"defaultValue" : "true"
+		},
+		"server" : {
+			"type" : "string",
+			"regex" : "",
+			"description" : "Adresse du serveur de journalisation (ipv4, ipv6, Url)",
+			"defaultValue" : "192.168.35.55"
+		},
+		"port" : {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Port du serveur de journalisation  (Integer : 0 - 65536)",
+			"defaultValue" : 514
+		}
+	},
+
+	"config" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation de la configuration et la mise à jour (Boolean)",
+			"defaultValue" : "true"
+		},
+		"server" : {
+			"type" : "string",
+			"regex" : "",
+			"description" : "Adresse du serveur de configuration et mise à jour, adresse de prod par défaut (url, IPv4 ou IPv6) ",
+			"defaultValue" : "192.168.35.55"
+		}
+	},
+
+	"metrics": {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du calcul des métriques Scoop (Boolean)",
+			"defaultValue" : "true"
+		},
+		"g5lastreceivedthreshold": {
+			"type" : "integer",
+			"regex" : "/^\\d+$/",
+			"description" : "Seuil de déclenchement de l'alerte G5 en minutes (Integer)",
+			"defaultValue" : 0
+			},
+		"platform_server" : {
+				"type" : "string",
+				"regex" : "",
+				"description" : "Adresse du serveur plateforme, adresse de prod par défaut (url, IPv4 ou IPv6)",
+				"defaultValue" : "192.168.35.55"
+			},
+		"scoop_server" : {
+				"type" : "string",
+				"regex" : "",
+				"description" : "Adresse du serveur Scoop pour télécharger les fichiers scoop.conf et vehicule.conf (Url) ",
+				"defaultValue" : "scoop-valyogoko.diro.c-its.fr"
+			}
+	},
+	"ecall" : {
+		"enable" : {
+			"type" : "boolean",
+			"regex" : "/^(true|false)$/",
+			"description" : "Activation du module ecall (Boolean)",
+			"defaultValue" : "true"
+		}
+	},
+	"pfcomm" : {
+		"remote_soap_datex_uri" : {
+			"type" : "string",
+			"description" : "URL distant SOAP DATEX  ",
+			"defaultValue" : "http://192.168.40.59:8080/scoop-ptf/mau/wsdl/supplierPush/2\\_0/putDatex2Data"
+		},
+		"base_remote_soap_datex_snapshot_uri" : {
+			"type" : "string",
+			"description" : "La base de l'URL distant SOAP DATEX Snapshot",
+			"defaultValue" : "http://192.168.40.59:8080/scoop-ptf/mau/wsdl/supplierPush/2\\_0/snapshot/"
+		},
+		"queue_limit" : {
+			"type": "integer",
+			"regex": "/^\\d+$/",
+			"description": "limite de la file d'attente",
+			"defaultValue": 2
+		} 
+
+	},
+	"hybridation": {
+		"gencamdistance": {
+			"type": "integer",
+			"regex": "/^\\d+$/",
+			"description": "La distance (en mètres) entre la position actuelle de l UTIC et la position incluse dans le CAM précédemment transmise au Nfr",
+			"defaultValue": 250
+		},
+		"gencamdelay": {
+			"type": "integer",
+			"regex": "/^\\d+$/",
+			"description": "Le temps écoulé (en secondes) depuis le dernier CAM transmise au Nfr",
+			"defaultValue": 120
+		},
+		"repdenm": {
+			"type": "integer",
+			"regex": "/^\\d+$/",
+			"description": "La période d envoi des DENM (en minutes, comprise entre 1 et 9) ",
+			"defaultValue": 9
+		},
+		"geofwdauthorization": {
+			"type": "boolean",
+			"regex": "/^(true|false)$/",
+			"description": "Activation d envoi en G5 d un message voué à être transmis provenant du NFr ",
+			"defaultValue": "false"
+		},
+		"urlconnexion": {
+			"type": "string",
+			"regex": "",
+			"description": "URL ou @IP de connexion au Nfr",
+			"defaultValue": "scoopfr-itss.preprod.din.developpement-durable.gouv.fr"
+		},
+		"portconnexion": {
+			"type": "integer",
+			"regex": "",
+			"description": "Port de connexion au Nfr",
+			"defaultValue": ""
+		},
+		"enable": {
+			"type": "boolean",
+			"regex": "/^(true|false)$/",
+			"description": "Activation de la connexion au nœud national (Boolean)",
+			"defaultValue": "true"
+		},
+		"thresupload": {
+			"type": "integer",
+			"regex": "/^\\d+$/",
+			"description": "le seuil des données (en Mo) téléchargées vers le nœud national ",
+			"defaultValue": ""
+		},
+		"thresdownload": {
+			"type": "integer",
+			"regex": "/^\\d+$/",
+			"description": "le seuil des données (en Mo) téléchargées depuis le nœud national ",
+			"defaultValue": ""
+		},
+		"supervizmessfail": {
+			"type": "integer",
+			"regex": "/^\\d+$/",
+			"description": "Le seuil de messages dont l envoi au NFr a échoué (compris entre 1 et 10 ) ",
+			"defaultValue": 2
+		}
+	}  
+}

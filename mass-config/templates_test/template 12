@@ -1,0 +1,1035 @@
+<div class="pace  pace-inactive">
+    <div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+<script>updateResolution();</script>
+
+<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navHeaderCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="hidden-md hidden-sm navbar-brand" href="">
+                <img src="http://scoop-test.yogoko.fr/images/librenms_logo_light.svg" alt="">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navHeaderCollapse">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown">
+                    <a href="http://scoop-test.yogoko.fr/overview" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i class="fa fa-home fa-fw fa-lg fa-nav-icons hidden-md" aria-hidden="true"></i> <span class="hidden-sm">Vue d'ensemble</span></a>
+                    <ul class="dropdown-menu multi-level" role="menu">
+                        <li><a href="http://scoop-test.yogoko.fr/overview"><i class="fa fa-tv fa-fw fa-lg" aria-hidden="true"></i> Tableau de bord</a></li>
+                        <!--
+                          <li class="dropdown-submenu">
+                               <a><i class="fa fa-map fa-fw fa-lg"
+                                                                 aria-hidden="true"></i> Cartes</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="http://scoop-test.yogoko.fr/availability-map"><i class="fa fa-arrow-circle-up fa-fw fa-lg"
+                                                                                 aria-hidden="true"></i> Disponibilité                                    </a></li>
+                                  <li><a href="http://scoop-test.yogoko.fr/map"><i class="fa fa-sitemap fa-fw fa-lg"
+                                                                    aria-hidden="true"></i> Réseau</a></li>
+                                                                      <li class="dropdown-submenu"><a><i class="fa fa-th fa-fw fa-lg"
+                                                                                  aria-hidden="true"></i> Cartes de groupes de périphériques                                        </a>
+                                          <ul class="dropdown-menu scrollable-menu">
+                                                                                      <li><a href="http://scoop-test.yogoko.fr/map/group=3" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i>
+                                                  CD 22
+                                              </a></li>
+                                                                                      <li><a href="http://scoop-test.yogoko.fr/map/group=2" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i>
+                                                  CD 35
+                                              </a></li>
+                                                                                      <li><a href="http://scoop-test.yogoko.fr/map/group=4" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i>
+                                                  DIR Ouest
+                                              </a></li>
+                                                                                      <li><a href="http://scoop-test.yogoko.fr/map/group=6" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i>
+                                                  Région Bretagne
+                                              </a></li>
+                                                                                      <li><a href="http://scoop-test.yogoko.fr/map/group=5" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i>
+                                                  Saint-Brieuc Agglomération
+                                              </a></li>
+                                                                                      <li><a href="http://scoop-test.yogoko.fr/map/group=1" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i>
+                                                  Test
+                                              </a></li>
+                                                                                      <li><a href="http://scoop-test.yogoko.fr/map/group=7" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i>
+                                                  Tous
+                                              </a></li>
+                                                                              </ul></li>
+                                                                  <li><a href="http://scoop-test.yogoko.fr/fullscreenmap"><i class="fa fa-expand fa-fw fa-lg"
+                                                                              aria-hidden="true"></i> Géographique                                    </a></li>
+                              </ul>
+                          </li>
+                                                  <li class="dropdown-submenu">
+                              <a><i class="fa fa-plug fa-fw fa-lg" aria-hidden="true"></i> Plugins</a>
+                              <ul class="dropdown-menu">
+                                  
+                                                                                                      <li><a href="http://scoop-test.yogoko.fr/plugin/view=admin"> <i class="fa fa-lock fa-fw fa-lg"
+                                                                                   aria-hidden="true"></i>Plugin Admin                                    </a>
+                                  </li>
+                                                              </ul>
+                          </li>
+                                                  <li class="dropdown-submenu">
+                              <a><i class="fa fa-wrench fa-fw fa-lg"
+                                                                 aria-hidden="true"></i> Outils</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="http://scoop-test.yogoko.fr/ripenccapi"><i class="fa fa-star fa-fw fa-lg"
+                                                                           aria-hidden="true"></i> RIPE NCC API                                    </a></li>
+                                                              </ul>
+                          </li>
+                          <li role="presentation" class="divider"></li>
+                          <li><a href="http://scoop-test.yogoko.fr/eventlog"><i class="fa fa-bookmark fa-fw fa-lg"
+                                                                 aria-hidden="true"></i> Journal des événements</a></li>
+                                                  <li><a href="http://scoop-test.yogoko.fr/syslog"><i class="fa fa-clone fa-fw fa-lg"
+                                                               aria-hidden="true"></i> Syslog</a></li>
+                                                  
+                          <li><a href="http://scoop-test.yogoko.fr/inventory"><i class="fa fa-cube fa-fw fa-lg"
+                                                                  aria-hidden="true"></i> Inventaire</a></li>
+                          
+                          <li role="presentation" class="divider"></li>
+                          <li><a href="http://scoop-test.yogoko.fr/search/search=ipv4"><i class="fa fa-search fa-fw fa-lg"
+                                                                           aria-hidden="true"></i> Adresse IPv4                            </a></li>
+                          <li><a href="http://scoop-test.yogoko.fr/search/search=ipv6"><i class="fa fa-search fa-fw fa-lg"
+                                                                           aria-hidden="true"></i> Adresse IPv6                            </a></li>
+                          <li><a href="http://scoop-test.yogoko.fr/search/search=mac"><i class="fa fa-search fa-fw fa-lg"
+                                                                          aria-hidden="true"></i> Adresse MAC</a>
+                          </li>
+                          <li><a href="http://scoop-test.yogoko.fr/search/search=arp"><i class="fa fa-search fa-fw fa-lg"
+                                                                          aria-hidden="true"></i> Tables ARP</a>
+                          </li>
+                          <li><a href="http://scoop-test.yogoko.fr/search/search=fdb"><i class="fa fa-search fa-fw fa-lg"
+                                                                          aria-hidden="true"></i> Tables FDB</a>
+                          </li>
+                          -->
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="http://scoop-test.yogoko.fr/devices" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i class="fa fa-server fa-fw fa-lg fa-nav-icons hidden-md" aria-hidden="true"></i> <span class="hidden-sm">Appareils</span></a>
+                    <ul class="dropdown-menu">
+                        <!--
+                          <li class="dropdown-submenu">
+  -->
+                        <li class="dropdown">
+                            <a href="http://scoop-test.yogoko.fr/devices"><i class="fa fa-server fa-fw fa-lg" aria-hidden="true"></i> Tous les appareils</a>
+                            <!--
+                              <ul class="dropdown-menu scrollable-menu">
+                                                              <li><a href="http://scoop-test.yogoko.fr/devices/type=OBU"><i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i> OBU</a></li>
+                                                      </ul>
+  -->
+                        </li>
+
+                        <li class="dropdown-submenu"><a><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> Groupes
+                                de périphériques </a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                <li><a href="http://scoop-test.yogoko.fr/devices/group=3" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> CD 22</a></li>
+                                <li><a href="http://scoop-test.yogoko.fr/devices/group=2" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> CD 35</a></li>
+                                <li><a href="http://scoop-test.yogoko.fr/devices/group=4" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> DIR Ouest</a></li>
+                                <li><a href="http://scoop-test.yogoko.fr/devices/group=6" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> Région Bretagne</a>
+                                </li>
+                                <li><a href="http://scoop-test.yogoko.fr/devices/group=5" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> Saint-Brieuc
+                                        Agglomération</a></li>
+                                <li><a href="http://scoop-test.yogoko.fr/devices/group=1" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> Test</a></li>
+                                <li><a href="http://scoop-test.yogoko.fr/devices/group=7" title=""><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> Tous</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="http://scoop-test.yogoko.fr/device-groups"><i class="fa fa-th fa-fw fa-lg" aria-hidden="true"></i> Gérer les groupes </a></li>
+
+                        <!--
+                          <li role="presentation" class="divider"></li>
+                          <!--
+                          <li><a href="http://scoop-test.yogoko.fr/device-dependencies"><i class="fa fa-group fa-fw fa-lg"></i> Dépendances du périphérique</a></li>
+  -->
+                        <!--
+                          <li role="presentation" class="divider"></li>
+                          <li><a href="http://scoop-test.yogoko.fr/addhost"><i class="fa fa-plus fa-fw fa-lg"
+                                                                aria-hidden="true"></i> Ajouter un périphérique</a></li>
+                          <li><a href="http://scoop-test.yogoko.fr/delhost"><i class="fa fa-trash fa-fw fa-lg"
+                                                                aria-hidden="true"></i> Supprimer le périphérique</a></li>
+  -->
+
+                    </ul>
+                </li>
+
+
+                <!--
+                  <li class="dropdown">
+                      <a href="http://scoop-test.yogoko.fr/ports" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i
+                              class="fa fa-link fa-fw fa-lg fa-nav-icons hidden-md" aria-hidden="true"></i> <span
+                              class="hidden-sm">Ports</span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="http://scoop-test.yogoko.fr/ports"><i class="fa fa-link fa-fw fa-lg"
+                                                              aria-hidden="true"></i> Tous les ports</a></li>
+  
+                                                      <li><a href="http://scoop-test.yogoko.fr/ports/errors=yes"><i class="fa fa-exclamation-circle fa-fw fa-lg"
+                                                                             aria-hidden="true"></i> Erreurs 7                                </a></li>
+                          
+                          
+                          
+                          
+                                                      
+                              <li role="presentation" class="divider"></li>
+  
+                              
+                              <li><a href="http://scoop-test.yogoko.fr/ports/state=down"><i class="fa fa-arrow-circle-down fa-fw fa-lg"
+                                                                             aria-hidden="true"></i> Down 28                                </a></li>
+                              <li><a href="http://scoop-test.yogoko.fr/ports/state=admindown"><i
+                                          class="fa fa-arrow-circle-o-down fa-fw fa-lg"
+                                          aria-hidden="true"></i> Désactivé 14                                </a></li>
+  
+                                                              <li><a href="http://scoop-test.yogoko.fr/ports/deleted=yes"><i class="fa fa-minus-circle fa-fw fa-lg"
+                                                                                  aria-hidden="true"></i> Supprimé 7                                    </a></li>
+                                                                          </ul>
+                  </li>
+  -->
+
+                <li class="dropdown">
+                    <a href="http://scoop-test.yogoko.fr/health" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i class="fa fa-heartbeat fa-fw fa-lg fa-nav-icons hidden-md" aria-hidden="true"></i> <span class="hidden-sm">Santé</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://scoop-test.yogoko.fr/health/metric=mempool"><i class="fa fa-braille fa-fw fa-lg" aria-hidden="true"></i> Mémoire</a>
+                        </li>
+                        <li><a href="http://scoop-test.yogoko.fr/health/metric=processor"><i class="fa fa-microchip fa-fw fa-lg" aria-hidden="true"></i> Processeur </a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/health/metric=storage"><i class="fa fa-database fa-fw fa-lg" aria-hidden="true"></i> Stockage</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+                <!--
+                  -->
+
+                <!--
+                  -->
+
+                <!--
+                  -->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i class="fa fa-exclamation-circle fa-col-danger fa-fw fa-lg fa-nav-icons hidden-md" aria-hidden="true"></i> <span class="hidden-sm">Alertes</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://scoop-test.yogoko.fr/alerts"><i class="fa fa-bell fa-fw fa-lg" aria-hidden="true"></i> Alertes en cours</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-log"><i class="fa fa-file-text fa-fw fa-lg" aria-hidden="true"></i> Historique d'alertes</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-stats"><i class="fa fa-bar-chart fa-fw fa-lg" aria-hidden="true"></i> Statistiques</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-rules"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i> Règles d'alerte</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-schedule"><i class="fa fa-calendar fa-fw fa-lg" aria-hidden="true"></i> Maintenance prévue </a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/templates"><i class="fa fa-file fa-fw fa-lg" aria-hidden="true"></i> Modèles d'alerte</a>
+                        </li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-transports"><i class="fa fa-bus fa-fw fa-lg" aria-hidden="true"></i> Alerte transports </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><i class="fa fa-cogs fa-fw fa-lg fa-nav-icons hidden-md" aria-hidden="true"></i> <span class="hidden-sm">Templates</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://scoop-test.yogoko.fr/alerts"><i class="fa fa-bell fa-fw fa-lg" aria-hidden="true"></i> Alertes en cours</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-log"><i class="fa fa-file-text fa-fw fa-lg" aria-hidden="true"></i> Historique d'alertes</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-stats"><i class="fa fa-bar-chart fa-fw fa-lg" aria-hidden="true"></i> Statistiques</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-rules"><i class="fa fa-list fa-fw fa-lg" aria-hidden="true"></i> Règles d'alerte</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-schedule"><i class="fa fa-calendar fa-fw fa-lg" aria-hidden="true"></i> Maintenance prévue </a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/templates"><i class="fa fa-file fa-fw fa-lg" aria-hidden="true"></i> Modèles d'alerte</a>
+                        </li>
+                        <li><a href="http://scoop-test.yogoko.fr/alert-transports"><i class="fa fa-bus fa-fw fa-lg" aria-hidden="true"></i> Alerte transports </a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <form role="search" class="navbar-form navbar-right global-search">
+                <input type="hidden" name="_token" value="Ih8yO3lmj97hyxkZgwMtgE2C61hsvsSD9tmnP5CX">
+                <div class="form-group">
+                    <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control typeahead tt-hint" type="search" autocomplete="off" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(255, 255, 255);" readonly="" spellcheck="false" tabindex="-1" dir="ltr"><input class="form-control typeahead tt-input" type="search" id="gsearch" name="gsearch" placeholder="Recherche Globale" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" aria-activedescendant="" aria-owns="gsearch_listbox" role="combobox" aria-readonly="true" aria-autocomplete="list"><span role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span>
+                        <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre>
+                        <div role="listbox" class="" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+                            <div role="presentation" class="tt-dataset tt-dataset-0"></div>
+                            <div role="presentation" class="tt-dataset tt-dataset-1"></div>
+                            <div role="presentation" class="tt-dataset tt-dataset-2"></div>
+                        </div>
+                    </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+                        <i class="fa fa-user fa-fw fa-lg fa-nav-icons" aria-hidden="true"></i>
+                        <span class="badge badge-navbar-user count-notif badge-default"></span>
+                        <span class="hidden-sm"><small>admin</small></span>
+                        <span class="visible-xs-inline-block">Utilisateur</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://scoop-test.yogoko.fr/preferences"><i class="fa fa-cog fa-fw fa-lg" aria-hidden="true"></i> Mes Paramètres</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/notifications"><span class="badge count-notif">0</span>
+                                Alertes en cours </a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li>
+                            <a href="http://scoop-test.yogoko.fr/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <i class="fa fa-sign-out fa-fw fa-lg" aria-hidden="true"></i> Déconnexion </a>
+
+                            <form id="logout-form" action="http://scoop-test.yogoko.fr/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="Ih8yO3lmj97hyxkZgwMtgE2C61hsvsSD9tmnP5CX">
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" style="margin-left:5px"><i class="fa fa-cog fa-fw fa-lg fa-nav-icons" aria-hidden="true"></i>
+                        <span class="visible-xs-inline-block">Paramètres</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://scoop-test.yogoko.fr/settings"><i class="fa fa-cogs fa-fw fa-lg" aria-hidden="true"></i> Paramètres globaux</a></li>
+                        <li><a href="http://scoop-test.yogoko.fr/validate"><i class="fa fa-check-circle fa-fw fa-lg" aria-hidden="true"></i> Valider la configuration</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="http://scoop-test.yogoko.fr/users"><i class="fa fa-user-circle-o fa-fw fa-lg" aria-hidden="true"></i> Gestion des utilisateurs</a>
+                        </li>
+                        <li><a href="http://scoop-test.yogoko.fr/authlog"><i class="fa fa-shield fa-fw fa-lg" aria-hidden="true"></i> Historique d'authentification</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="http://scoop-test.yogoko.fr/pollers"><i class="fa fa-th-large fa-fw fa-lg" aria-hidden="true"></i> Sondeurs</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://scoop-test.yogoko.fr/pollers/tab=pollers"><i class="fa fa-th-large fa-fw fa-lg" aria-hidden="true"></i> Sondeurs</a></li>
+                                <li><a href="http://scoop-test.yogoko.fr/pollers/tab=performance"><i class="fa fa-th-large fa-fw fa-lg" aria-hidden="true"></i> Performance</a>
+                                </li>
+                                <li><a href="http://scoop-test.yogoko.fr/pollers/tab=log"><i class="fa fa-file-text fa-fw fa-lg" aria-hidden="true"></i> Historique</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation" class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="fa fa-code fa-fw fa-lg" aria-hidden="true"></i> API</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://scoop-test.yogoko.fr/api-access"><i class="fa fa-cog fa-fw fa-lg" aria-hidden="true"></i> Paramètres de l'API </a></li>
+                                <li><a href="https://docs.librenms.org/API/" target="_blank" rel="noopener"><i class="fa fa-book fa-fw fa-lg" aria-hidden="true"></i> Documentation API</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li role="presentation" class="divider"></li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><span class="countdown_timer" id="countdown_timer">Refresh disabled</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="countdown_timer_status" id="countdown_timer_status"><i class="fa fa-pause fa-fw fa-lg"></i></span></a></li>
+                            </ul>
+                        </li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="http://scoop-test.yogoko.fr/about"><i class="fa fa-info-circle fa-fw fa-lg" aria-hidden="true"></i> À propos </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    var devices = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+            url: ajax_url + "_search.php?search=%QUERY&type=device",
+            filter: function (devices) {
+                return $.map(devices, function (device) {
+                    return {
+                        device_id: device.device_id,
+                        device_image: device.device_image,
+                        url: device.url,
+                        name: device.name,
+                        device_os: device.device_os,
+                        version: device.version,
+                        device_hardware: device.device_hardware,
+                        device_ports: device.device_ports,
+                        location: device.location
+                    };
+                });
+            },
+            wildcard: "%QUERY"
+        }
+    });
+    var ports = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+            url: ajax_url + "_search.php?search=%QUERY&type=ports",
+            filter: function (ports) {
+                return $.map(ports, function (port) {
+                    return {
+                        count: port.count,
+                        url: port.url,
+                        name: port.name,
+                        description: port.description,
+                        colours: port.colours,
+                        hostname: port.hostname
+                    };
+                });
+            },
+            wildcard: "%QUERY"
+        }
+    });
+    var bgp = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+            url: ajax_url + "_search.php?search=%QUERY&type=bgp",
+            filter: function (bgp_sessions) {
+                return $.map(bgp_sessions, function (bgp) {
+                    return {
+                        count: bgp.count,
+                        url: bgp.url,
+                        name: bgp.name,
+                        description: bgp.description,
+                        localas: bgp.localas,
+                        bgp_image: bgp.bgp_image,
+                        remoteas: bgp.remoteas,
+                        colours: bgp.colours,
+                        hostname: bgp.hostname
+                    };
+                });
+            },
+            wildcard: "%QUERY"
+        }
+    });
+
+    if ($(window).width() < 768) {
+        var cssMenu = 'typeahead-left';
+    } else {
+        var cssMenu = '';
+    }
+
+    devices.initialize();
+    ports.initialize();
+    bgp.initialize();
+    $('#gsearch').typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1,
+        classNames: {
+            menu: cssMenu
+        }
+    },
+        {
+            source: devices.ttAdapter(),
+            limit: '8',
+            async: true,
+            display: 'name',
+            valueKey: 'name',
+            templates: {
+                header: '<h5><strong>&nbsp;Devices</strong></h5>',
+                suggestion: Handlebars.compile('<p><a href="{{url}}"><img src="{{device_image}}" border="0"> <small><strong>{{name}}</strong> | {{device_os}} | {{version}} | {{device_hardware}} with {{device_ports}} port(s) | {{location}}</small></a></p>')
+            }
+        },
+        {
+            source: ports.ttAdapter(),
+            limit: '8',
+            async: true,
+            display: 'name',
+            valueKey: 'name',
+            templates: {
+                header: '<h5><strong>&nbsp;Ports</strong></h5>',
+                suggestion: Handlebars.compile('<p><a href="{{url}}"><small><i class="fa fa-link fa-sm icon-theme" aria-hidden="true"></i> <strong>{{name}}</strong> – {{hostname}}<br /><i>{{description}}</i></small></a></p>')
+            }
+        },
+        {
+            source: bgp.ttAdapter(),
+            limit: '8',
+            async: true,
+            display: 'name',
+            valueKey: 'name',
+            templates: {
+                header: '<h5><strong>&nbsp;BGP Sessions</strong></h5>',
+                suggestion: Handlebars.compile('<p><a href="{{url}}"><small><i class="{{bgp_image}}" aria-hidden="true"></i> {{name}} - {{hostname}}<br />AS{{localas}} -> AS{{remoteas}}</small></a></p>')
+            }
+        }).on('typeahead:select', function (ev, suggestion) {
+            window.location.href = suggestion.url;
+        }).on('keyup', function (e) {
+            // on enter go to the first selection
+            if (e.which === 13) {
+                $('.tt-selectable').first().click();
+            }
+        });
+</script>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default panel-condensed">
+                <div class="panel-heading">
+                    <div class="row" style="padding: 0px 10px 0px 10px;">
+
+                        <div class="col-md-4" style="font-size: 20px;">Templates :
+                            <select size="9">
+                                <option value="">Sélectionnez un templates</option>
+                                <optgroup label="FW4.4">
+                                    <option value="pays1">Par défaut</option>
+                                </optgroup>
+                                <optgroup label="FW4.5">
+                                    <option value="pays1">Par défaut</option>
+                                </optgroup>
+
+                                <optgroup label="FW4.6">
+                                    <option value="pays3">Par défaut</option>
+                                    <option value="pays4">template1</option>
+                                    <option value="pays4" selected>Leapseconds10</option>
+                                </optgroup>
+
+                            </select>
+                        </div>
+                        <button type="button" onclick="overLoadFunction()" class="btn btn-warning">Annuler</button>
+                        <button type="submit" name="btn-update-config-var" class="btn btn-success">Enregistrer</button>
+                    </div>
+                </div>
+                <div class="devices-headers-table-menu" style="padding:6px 6px 0px 0px;">
+                    <div class="actions btn-group"><button class="btn btn-default" type="button" title="Refresh"><span class="icon glyphicon glyphicon-refresh"></span></button>
+                        <div class="dropdown btn-group"><button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="dropdown-text">50</span> <span class="caret"></span></button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li class="active" aria-selected="true"><a data-action="50" class="dropdown-item dropdown-item-button">50</a></li>
+                                <li aria-selected="false"><a data-action="100" class="dropdown-item dropdown-item-button">100</a></li>
+                                <li aria-selected="false"><a data-action="250" class="dropdown-item dropdown-item-button">250</a></li>
+                                <li aria-selected="false"><a data-action="-1" class="dropdown-item dropdown-item-button">All</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown btn-group"><button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="dropdown-text"><span class="icon glyphicon glyphicon-th-list"></span></span> <span class="caret"></span></button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li><label class="dropdown-item"><input name="status" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> &nbsp;</label></li>
+                                <li><label class="dropdown-item"><input name="icon" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> Vendor</label></li>
+                                <li><label class="dropdown-item"><input name="hostname" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> Appareils</label></li>
+                                <li><label class="dropdown-item"><input name="last_polled" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> Dernier sondage</label>
+                                </li>
+                                <li><label class="dropdown-item"><input name="os" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> Template configuration</label></li>
+                                <li><label class="dropdown-item"><input name="os" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> groupe de périphérique</label></li>
+                                        <li><label class="dropdown-item"><input name="location" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> Emplacement</label></li>
+                                        <li><label><input name="location" type="checkbox" value="1" checked="checked"> Selection</label></li>
+                                        <li><label class="dropdown-item"><input name="actions" type="checkbox" value="1" class="dropdown-item-checkbox" checked="checked"> Actions</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left">
+                        <form method="post" action="" class="form-inline devices-search-header" role="form"><input type="hidden" name="_token" value="Ih8yO3lmj97hyxkZgwMtgE2C61hsvsSD9tmnP5CX">
+                            <div class="form-group"><input type="text" name="searchquery" id="searchquery" value="" ''="" class="form-control" placeholder="Rechercher"></div>
+                            <div class="form-group"><select name="state" id="state" class="form-control">
+                                    <option value="">Tout</option>
+                                    <option value="up">Actif</option>
+                                    <option value="down">Injoignable</option>
+                                </select></div>
+                            <div class="form-group"><select name="os" id="os" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true"></select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-os-container"><span class="select2-selection__rendered" id="select2-os-container"><span class="select2-selection__placeholder">Tous les
+                                                    OS</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                            <div class="form-group"><select name="version" id="version" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true"></select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-version-container"><span class="select2-selection__rendered" id="select2-version-container"><span class="select2-selection__placeholder">Toutes les
+                                                    versions</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                            <div class="form-group"><select name="hardware" id="hardware" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true"></select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-hardware-container"><span class="select2-selection__rendered" id="select2-hardware-container"><span class="select2-selection__placeholder">Toutes les
+                                                    plateformes</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                            <div class="form-group"><select name="type" id="device-type" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true"></select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-device-type-container"><span class="select2-selection__rendered" id="select2-device-type-container"><span class="select2-selection__placeholder">Tous les
+                                                    types</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div><input type="submit" class="btn btn-info" value="Rechercher"><a href="http://scoop-test.yogoko.fr/devices/format=list_detail/" title="Update the browser URL to reflect the search criteria." class="btn btn-default">Mettre a jour l'URL</a><a href="http://scoop-test.yogoko.fr/devices/" title="Reset criteria to default." class="btn btn-default">Reinitialiser</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="table-responsive">
+                    <table id="devices" class="table table-hover table-condensed table-striped bootgrid-table" aria-busy="false">
+                        <thead>
+                            <tr>
+                                <th data-column-id="status" class="text-left" style="width:7px;"><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">&nbsp;</span><span class="icon glyphicon "></span></a></th>
+                                <th data-column-id="icon" class="text-left" style="width:70px;"><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">Vendor</span><span class="icon glyphicon "></span></a></th>
+                                <th data-column-id="hostname" class="text-left" style=""><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">Appareils</span><span class="icon glyphicon glyphicon-chevron-up"></span></a></th>
+                                <th data-column-id="last_polled" class="text-left" style=""><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">Dernier sondage</span><span class="icon glyphicon "></span></a>
+                                </th>
+                                <th data-column-id="os" class="text-left" style=""><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">Template
+                                            configuration</span><span class="icon glyphicon "></span></a></th>
+                                <th data-column-id="os" class="text-left" style=""><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">Groupe de
+                                            périphérique</span><span class="icon glyphicon "></span></a></th>
+                                            <th data-column-id="location" class="text-left" style=""><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">Emplacement</span><span class="icon glyphicon "></span></a></th>
+                                            <th data-column-id="location" class="text-left" style="white-space: nowrap;"><a href="javascript:void(0);" class="column-header-anchor sortable"><span class="text">Selection <input type="checkbox"></span><span class="icon glyphicon "></span></a></th>
+                                            <th data-column-id="actions" class="text-left device-table-header-actions" style="width:90px;"><a href="javascript:void(0);" class="column-header-anchor "><span class="text">Actions</span><span class="icon glyphicon "></span></a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-row-id="0">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=126/">fr01diro090f6574</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 2y 341d 21h 59m 1s</span></td>
+                                <td class="text-left" style="">FW4.7 Par défaut</td>
+                                <td class="text-left" style="">CEI Vannes</td>
+                                <td class="text-left" style="">&nbsp;</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=126/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=126/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=126/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6574" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6574"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="1">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=145/">fr01diro090f6603</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 24d 23h 51m 37s</span></td>
+                                <td class="text-left" style="">FW4.7 Par défaut</td>
+                                <td class="text-left" style="">CEI Vannes</td>
+                                <td class="text-left" style="">&nbsp;</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=145/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=145/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=145/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6603" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6603"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="2">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=143/">fr01diro090f6641</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 24d 21h 51m 51s</span></td>
+                                <td class="text-left" style="">FW4.6 Leapseconds10</td>
+                                <td class="text-left" style="">CD 22</td>
+                                <td class="text-left" style="">[48.127902,-1.627368]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=143/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=143/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=143/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6641" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6641"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="3">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=133/">fr01diro090f6650</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 128d 1h 1m 30s</span></td>
+                                <td class="text-left" style="">FW4.6 Par défaut</td>
+                                <td class="text-left" style="">CD 22</td>
+                                <td class="text-left" style="">[,]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=133/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=133/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=133/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6650" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6650"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="4">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=120/">fr01diro090f6655</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 2y 330d 18h 4m 40s</span></td>
+                                <td class="text-left" style="">FW4.6 Par défaut</td>
+                                <td class="text-left" style="">CD 22</td>
+                                <td class="text-left" style="">[48.070473,-1.697278]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=120/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=120/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=120/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6655" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6655"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="5">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=144/">fr01diro090f6701</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 30d 7m 13s</span></td>
+                                <td class="text-left" style="">FW4.6 Leapseconds10</td>
+                                <td class="text-left" style="">CD 22</td>
+                                <td class="text-left" style="">[nan,nan]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=144/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=144/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=144/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6701" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6701"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="6">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=125/">fr01diro090f679b</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 2y 329d 20h 46m 32s</span></td>
+                                <td class="text-left" style="">FW4.6 Par défaut</td>
+                                <td class="text-left" style="">CEI Pleumeuleuc</td>
+                                <td class="text-left" style="">[nan,nan]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=125/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=125/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=125/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F679B" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f679b"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="7">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=138/">fr01diro090f67dc</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 1y 36d 22h 50m 6s</span></td>
+                                <td class="text-left" style="">FW4.7 Par défaut</td>
+                                <td class="text-left" style="">CEI Pleumeuleuc</td>
+                                <td class="text-left" style="">[48.127943,-1.627073]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=138/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=138/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=138/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F67DC" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f67dc"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="8">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=137/">fr01diro090f67e4</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 1y 40d 22h 8m 25s</span></td>
+                                <td class="text-left" style="">FW4.6 Leapseconds10</td>
+                                <td class="text-left" style="">CEI Pleumeuleuc</td>
+                                <td class="text-left" style="">[48.127839,-1.627052]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=137/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=137/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=137/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F67E4" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f67e4"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="9">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=142/">fr01diro090f6804</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 1y 9d 22h 23m 14s</span></td>
+                                <td class="text-left" style="">FW4.6 Par défaut</td>
+                                <td class="text-left" style="">CEI Vannes</td>
+                                <td class="text-left" style="">[48.127920,-1.627000]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=142/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=142/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=142/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6804" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6804"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="10">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=141/">fr01diro090f6892</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 178d 21h 11m 4s</span></td>
+                                <td class="text-left" style="">FW4.6 Par défaut</td>
+                                <td class="text-left" style="">CEI Vannes</td>
+                                <td class="text-left" style="">[nan,nan]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id="" checked></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=141/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=141/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=141/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F6892" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f6892"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="11">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=140/">fr01diro090f689a</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 195d 22h 38m 48s</span></td>
+                                <td class="text-left" style="">FW4.6 Par défaut</td>
+                                <td class="text-left" style="">CEI Vannes</td>
+                                <td class="text-left" style="">[48.127882,-1.627391]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id="" checked></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=140/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=140/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=140/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIRO090F689A" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01diro090f689a"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-row-id="12">
+                                <td class="text-left" style="width:7px;"><span class="alert-status label-danger"></span>
+                                </td>
+                                <td class="text-left" style="width:70px;"><span class="device-table-icon"><img src="http://scoop-test.yogoko.fr/images/os/yogoko.png" title="yogoko"></span></td>
+                                <td class="text-left" style=""><span><a class="list-device-down" href="http://scoop-test.yogoko.fr/device/device=122/">fr01dirof721fb6d</a><br></span>
+                                </td>
+                                <td class="text-left" style=""><span class="red"> 3y 20d 21h 37m 35s</span></td>
+                                <td class="text-left" style="">FW4.7 Par défaut</td>
+                                <td class="text-left" style="">DIRO</td>
+                                <td class="text-left" style="">[48.070428,-1.697228]</td>
+                                <td class="text-left" style=""><input type="checkbox" name="" id=""></td>
+
+                                <td class="text-left" style="width:90px;">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=122/"> <i class="fa fa-id-card fa-lg icon-theme" title="View device"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=122/tab=alerts/"> <i class="fa fa-exclamation-circle fa-lg icon-theme" title="View alerts"></i></a></div>
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr/device/device=122/tab=edit/"> <i class="fa fa-pencil fa-lg icon-theme" title="Edit device"></i></a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-1"><a href="http://scoop-test.yogoko.fr:449/?terminal_cmd=FR01DIROF721FB6D" target="ssh"><i class="fa fa-lock fa-lg icon-theme" title="SSH to fr01dirof721fb6d"></i></a></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="devices-footer" class="bootgrid-footer container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="pagination">
+                                <li class="first disabled" aria-disabled="true"><a data-page="first" class="button">«</a></li>
+                                <li class="prev disabled" aria-disabled="true"><a data-page="prev" class="button">&lt;</a></li>
+                                <li class="page-1 active" aria-disabled="false" aria-selected="true"><a data-page="1" class="button">1</a></li>
+                                <li class="next disabled" aria-disabled="true"><a data-page="next" class="button">&gt;</a></li>
+                                <li class="last disabled" aria-disabled="true"><a data-page="last" class="button">»</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 infoBar">
+                            <div class="infos">Showing 1 to 13 of 13 entries</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var grid = $("#devices").bootgrid({
+                    ajax: true,
+                    rowCount: [50, 100, 250, -1],
+                    columnSelection: true,
+                    formatters: {
+                        "status": function (column, row) {
+                            return "<span class=\"alert-status " + row.extra + "\"></span>";
+                        },
+                        "icon": function (column, row) {
+                            return "<span class=\"device-table-icon\">" + row.icon + "</span>";
+                        },
+                        "device": function (column, row) {
+                            return "<span>" + row.hostname + "</span>";
+                        },
+                        "last_polled": function (column, row) {
+                            if (row.status == 'down') {
+                                return "<span class='red'>" + row.last_polled + "</span>"
+                            } else if (row.status == 'disabled') {
+                                return '';
+                            } else {
+                                return row.last_polled;
+                            }
+                        },
+                    },
+                    templates: {
+                        header: "<div class=\"devices-headers-table-menu\" style=\"padding:6px 6px 0px 0px;\"><p class=\"{{css.actions}}\"></p></div><div class=\"row\"></div>"
+
+                    },
+                    post: function () {
+                        return {
+                            functional: '',
+                            warning: '',
+                            nonfunctional: '',
+                            format: ' list_detail',
+                            searchPhrase: '',
+                            os: '',
+                            version: '',
+                            hardware: '',
+                            features: '',
+                            location: '',
+                            type: '',
+                            state: '',
+                            disabled: '',
+                            ignore: '',
+                            group: '',
+                        };
+                    },
+                    url: "http://scoop-test.yogoko.fr/ajax/table/device"
+                });
+
+                $(".devices-headers-table-menu").append(
+                    "<div class='pull-left'>" +
+                    "<form method='post' action='' class='form-inline devices-search-header' role='form'>" +
+                    "<input type=\"hidden\" name=\"_token\" value=\"Ih8yO3lmj97hyxkZgwMtgE2C61hsvsSD9tmnP5CX\">" +
+                    "<div class='form-group'>" +
+                    "<input type='text' name='searchquery' id='searchquery' value='''' class='form-control' placeholder='Rechercher'>" +
+                    "</div>" +
+                    "<div class='form-group'><select name='state' id='state' class='form-control'><option value=''>Tout</option><option value='up'>Actif</option><option value='down'>Injoignable</option><select></div>" +
+                    "<div class='form-group'><select name='os' id='os' class='form-control'></select></div>" +
+                    "<div class='form-group'><select name='version' id='version' class='form-control'></select></div>" +
+                    "<div class='form-group'><select name='hardware' id='hardware' class='form-control'></select></div>" +
+                    /*  "<div class='form-group'><select name='features' id='features' class='form-control'></select></div>" +
+                        "<div class='form-group'><select name='location' id='location' class='form-control'></select></div>" + */
+                    "<div class='form-group'><select name='type' id='device-type' class='form-control'></select></div>" +
+                    "<input type='submit' class='btn btn-info' value='Rechercher'>" +
+                    "<a href='http://scoop-test.yogoko.fr/devices/format=list_detail/' title='Update the browser URL to reflect the search criteria.' class='btn btn-default'>Mettre a jour l'URL</a>" +
+                    "<a href='http://scoop-test.yogoko.fr/devices/' title='Reset criteria to default.' class='btn btn-default'>Reinitialiser</a>" +
+                    "</form>" +
+                    "</div>"
+                );
+
+                init_select2("#features", "device-field", { field: 'features' }, "", 'Toutes les fonctionnalités');
+                init_select2("#hardware", "device-field", { field: 'hardware' }, "", 'Toutes les plateformes');
+                init_select2("#os", "device-field", { field: 'os' }, "", 'Tous les OS');
+                init_select2("#device-type", "device-field", { field: 'type' }, "", 'Tous les types');
+                init_select2("#version", "device-field", { field: 'version' }, "", 'Toutes les versions');
+                init_select2("#location", "location", {}, "", 'All locations');
+            </script>
+            <script type="text/javascript">
+                document.title = 'Devices';
+            </script>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var no_refresh = true;
+    $(document).ready(function () {
+        $("#countdown_timer").html("Refresh disabled");
+        $("#countdown_timer_status").html("<i class=\"fa fa-pause fa-fw fa-lg\"></i>");
+        $("#countdown_timer_status").click("", function (event) {
+            event.preventDefault();
+        });
+    });
+</script>
+
+
+
+<script type="text/javascript"></script>
+
+<script>
+    // start-larapoke-script
+    if (typeof larapoke_script === 'undefined') {
+
+        let larapoke_date = new Date();
+
+        const larapoke_script = () => {
+            let ajax = new XMLHttpRequest;
+
+            ajax.onreadystatechange = () => {
+                if (ajax.readyState === 4 && ajax.status === 204) {
+                    larapoke_date = new Date();
+                }
+                larapoke_script_expired();
+            };
+
+            ajax.open('HEAD', 'http://scoop-test.yogoko.fr/poke');
+            ajax.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            ajax.send();
+
+        };
+
+        const larapoke_script_expired = () => {
+            if (navigator.onLine && new Date() - larapoke_date >= 1800000 + 7200000) {
+                location.reload(true);
+            }
+        };
+
+        setInterval(() => { larapoke_script(); }, 1800000);
+
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) { larapoke_script_expired(); }
+        }, false);
+
+        window.addEventListener('online', larapoke_script_expired(), false);
+    }
+      // end-larapoke-script
+</script>

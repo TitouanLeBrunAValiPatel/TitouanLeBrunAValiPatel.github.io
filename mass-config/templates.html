@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="css/templates.css">
+    <link rel="stylesheet" href="css/data-col.css">
+
+
+    <script src="./includes/head.js"></script>
+    <script src="./function/refresh-new-templates.js" defer></script>
+    <script src="./includes/version_config.js" defer></script>
+    <script src="./function/refresh-config-version.js" defer></script>
+    <script src="./function/buttonAction.js" defer></script>
+    <script src="./function/relocation.js" defer></script>
+    <script src="./function/date.js" defer></script>
+    <script src="./includes/include_templates.js" defer></script>
+    <script src="./function/destroyStorage.js" defer></script>
+
+</head>
+
+<body class="  pace-done">
+    <div id="popup" class="popup">
+        <span id="popup-text" class="popup-text">sdffgsdgfsdg</span>
+      </div> 
+<br>
+
+<div class="container-fluid">
+
+      
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body alert-danger"><img src="http://scoop-test.yogoko.fr/images/logos/yogoko.png" title="images/os/yogoko" class="device-icon-header pull-left">
+                    <div class="pull-left" style="margin-top: 5px;">
+                        <span style="font-size: 20px;"><a class="list-device-down" href="#">Gestion des Templates</a></span>       
+
+                    </div>
+                </div>
+            </div>
+            <div class="tabcontent">
+                <form action="" method="post" class="text-center" id="configForm">
+                    <div class="panel panel-default table-responsive">
+                        <div class="panel-heading text-center">
+                            <h4>Configuration</h4>
+                        </div>
+
+                        <table class="table" id="configFormHeader">
+                            <tbody>
+                                <tr>
+                                    <td id="rowVersion">
+                                        
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4" style="text-align: center;">Templates :
+                                            <select id="selectVersion" onchange="defaultTemplate(event)">
+                                                
+
+                                            </select>
+                                        </div>
+                                        <!-- <div class='col-md-4'>
+                                            <button type='button' class='btn btn-default' id='btnDowngrade' >Affichage de versions supplémentaires<br />(nécessite un retour usine)</button>
+                                        </div> -->
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">Dernière modification le : <span id="lastModification">02/08/2023 à 16h56</span>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td class="text-center">
+                                        <button type="button" onclick="location.href = 'templates_tab.html'" class="btn btn-warning">Annuler</button>
+                                        <button type="button" onclick="updateTemplates()" name="btn-update-config-var" class="btn btn-success">Enregistrer</button>
+                                        <button type="button" id="monBouton" name="btn-update-config-var" class="btn btn-primary">Dupliquer</button>
+                                        <button type="button" onclick="destroyLocalstorageTemplate()" id="deleteBtn" name="btn-update-config-var" class="btn btn-danger">Supprimer</button>
+
+                                    </td>
+  
+                        
+                    
+                                </tr>
+                    
+                
+                                <tr>
+                                    <td class="text-center" id="alertInfo">
+                                        <span id="versionText" style="font-size: 20px;">Version FW : </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Groupe</th>
+                                    <th>Variable</th>
+                                    <th>Valeur</th>
+                                    <th id="thActions">Actions</th>
+                                </tr>
+
+                            </tbody>
+                            <tbody id="tbodyVariables" style="display: table-row-group;">
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+
+                <div class="modal fade" id="downgradeWarning" tabindex="-1" role="dialog" aria-labelledby="downgradeWarningLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title danger" id="myModalLabel">Avertissement</h4>
+                            </div>
+                            <div class="modal-body">
+                                Pour rétrograder la version du boitier :
+                                <ol>
+                                    <li>Enregistrer la version antérieure ;</li>
+                                    <li>Effectuer un retour usine immédiatement.</li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                <button type="button" class="btn btn-warning" onclick="confirmDowngrade()">Accéder aux
+                                    versions antérieures</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <script type="text/javascript">
+                document.title = 'Templates ';
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+
+
+
+</script>
+
+</html>
